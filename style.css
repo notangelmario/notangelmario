@@ -20,9 +20,14 @@ img {
 .container {
   box-sizing: border-box;
   margin-right: 5vw;
-  margin-left: 5vw
+  margin-left: 5vw;
 }
-
+@media only screen and (min-width: 600px) {
+  .container {
+    margin-right: 15vw;
+    margin-left: 15vw;
+  }
+}
 .cover {
   position: relative;
   margin-bottom: 5rem;
@@ -66,7 +71,7 @@ img {
 .s-icon {
   width: 3rem;
   height: 3rem;
-  padding: .3rem;
+  padding: .2rem;
   z-index: 2;
 }
 .s-sub {
@@ -84,12 +89,18 @@ img {
 
 .section {
   background-color: #212121;
+  display: block;
   position: relative;
   z-index: 1;
 }
 .wave {
   display: block;
+  object-fit: fill;
+  vertical-align: middle;
+  width: 100%;
+  max-height: 128px;
   z-index: -1;
+  margin: -2px 0 -2px 0;
 }
 .wave.end {
   transform: rotate(180deg);
