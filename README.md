@@ -10,7 +10,7 @@
 
 - 🤝 I’m looking for help with [Mauv](https://github.com/mauv)
 
-- 👨‍💻 You can see more about me at [angelmario.eu](angelmario.eu)
+- 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
 - ❤️ I love collaborating
 
