@@ -112,6 +112,7 @@ img {
   grid-template-rows: auto;
   grid-gap: 1rem;
   grid-template-areas: 
+    "widget widget"
     "widget widget";
 }
 .spotify-widget {
@@ -125,6 +126,8 @@ img {
   .container-music {
     grid-template-areas: 
       "widget"
+      "widget"
+      "widget"
       "widget";
   }
 }
@@ -134,7 +137,7 @@ img {
   background-color: #212121;
   border-radius: 2rem 2rem 0 0;
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
   margin-top: 3rem;
 }
 
