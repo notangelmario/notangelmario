@@ -33,7 +33,7 @@ img {
   margin-bottom: 5rem;
 }
 .cover > div:first-of-type {
-  background-image: url(assets/cover.jpg);
+  background-image: url('assets/cover.jpg');
   background-position: center;
   background-size: cover;
   width: 100%;
