@@ -3,12 +3,12 @@
 
 <br/>
 
-- 🔭 I’m currently working on [Mauv](https://github.com/mauv)
+- 🔭 I’m currently working on [Mauv](https://github.com/notangelmario/mauv)
 
 - 🖥️ Main operating system is Linux 🐧  
 <sup>(Don't affiliate me with the community though)</sup>
 
-- 🤝 I’m looking for help with [Mauv](https://github.com/mauv)
+- 🤝 I’m looking for help with [Mauv](https://github.com/notangelmario/mauv)
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
