@@ -8,7 +8,7 @@
 - 🖥️ Main operating system is Linux 🐧  
 <sup>(Don't affiliate me with the community though)</sup>
 
-- 🤝 I’m looking for help with [Mauv](https://github.com/notangelmario/mauv)
+- 🤝 I’m looking for help with [Arta Inteligentei](https://ai.angelmario.eu/)
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
