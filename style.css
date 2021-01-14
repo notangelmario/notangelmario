@@ -48,7 +48,7 @@ img {
   transform: translateX(-50%);
   width: 15rem;
   height: 15rem;
-  background-image: url(assets/selfie.jpg);
+  background-image: url(assets/profile.png);
   background-position: center;
   background-size: cover;
   border-radius: 50%;
