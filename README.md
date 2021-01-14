@@ -18,6 +18,5 @@
 
 - 🔝 My goal is to be better than everyone because I hate everyone (almost)
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=notangelmario&show_icons=true&locale=en&layout=compact" alt="notangelmario" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en" alt="notangelmario" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=notangelmario&show_icons=true&locale=en&layout=compact" alt="notangelmario" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en" alt="notangelmario" /></p>
