@@ -8,12 +8,21 @@
   -ms-user-select: none;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+html {
+  height: 100%;
+  overflow: auto;
+}
+
 body {
-  overflow-x: hidden;
   max-width: 100%;
   background-color: #424242;
   color: #fff;
 }
+
+.disable-scroll {
+  overflow: hidden
+}
+
 img {
   pointer-events: none;
 }
@@ -98,7 +107,7 @@ img {
 
 .proj-showcase {
   width: 100%;
-  max-height: 100px;
+  max-height: 150px;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -112,7 +121,6 @@ img {
 .wave {
   display: block;
   object-fit: fill;
-  vertical-align: middle;
   width: 100%;
   max-height: 128px;
   z-index: -1;
@@ -196,4 +204,41 @@ img {
   padding: 2rem;
   border-radius: 50rem;
   background: linear-gradient(145deg, #1e1e1e, #232323);
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(145deg, #1e1e1e, #232323);
+  z-index: 999;
+}
+
+.loader::after {
+  content: '';
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-image: url('assets/profile.svg');
+  background-position: center;
+  background-size: cover;
+  animation: anim 2s ease-in-out;
+}
+
+@keyframes anim {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(.6);
+  }
+  100% {
+    filter: brightness(1);
+  }
 }
