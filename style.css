@@ -130,7 +130,7 @@ img {
   transform: rotate(180deg);
 }
 
-.container-music {
+.container-showcase {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
@@ -139,19 +139,32 @@ img {
     "widget widget"
     "widget widget";
 }
-.spotify-widget {
+
+.container-showcase.photos {
+  grid-template-areas: 
+    "widget widget widget"
+    "widget widget widget";
+}
+
+.widget {
   grid-area: "widget";
+  object-fit: cover;
   border-radius: 1rem;
   width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
-  .container-music {
+  .container-showcase {
     grid-template-areas: 
       "widget"
       "widget"
       "widget"
       "widget";
+  }
+  .container-showcase.photos {
+    grid-template-areas: 
+      "widget widget"
+      "widget widget";
   }
 }
 
@@ -229,6 +242,15 @@ img {
   background-position: center;
   background-size: cover;
   animation: anim 2s ease-in-out;
+}
+
+.loader::before {
+  content: 'Loading...';
+  color: #757575;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @keyframes anim {
