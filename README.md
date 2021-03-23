@@ -3,7 +3,7 @@
 
 <br/>
 
-- 🔭 I’m currently working on [Mauv](https://github.com/notangelmario/mauv)
+- 🔭 I’m currently working on myself
 
 - 🖥️ Main operating system is Linux 🐧  
 <sup>(Don't affiliate me with the community though)</sup>
