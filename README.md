@@ -3,12 +3,11 @@
 
 <br/>
 
-- 🔭 I’m currently working on [placet](https://github.com/notangelmario/placet)
-
+- 🔭 I’m currently working on ***nothing***
 - 🖥️ Main operating system is Linux 🐧  
 <sup>(Don't affiliate me with the community though)</sup>
 
-- 🤝 I’m looking for help with [placet](https://github.com/notangelmario/placet)
+- 🤝 I’m looking for help with ***nothing***
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
