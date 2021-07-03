@@ -15,5 +15,5 @@
 
 - 📫 Reach me at **savin@angelmario.eu**
 
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=notangelmario&show_icons=true&locale=en&layout=compact" alt="notangelmario" /></p>
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en" alt="notangelmario" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=justsevrage&show_icons=true&locale=en&layout=compact" alt="notangelmario" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=justsevrage&show_icons=true&locale=en" alt="notangelmario" /></p>
