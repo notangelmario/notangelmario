@@ -3,11 +3,11 @@
 
 <br/>
 
-- 🔭 I’m currently working on ***nothing***
+- 🔭 I’m currently working on [Pingy](https://pingy.ro)
 - 🖥️ Main operating system is Linux 🐧  
 <sup>(Don't affiliate me with the community though)</sup>
 
-- 🤝 I’m looking for help with ***nothing***
+- 🤝 I’m looking for help with [Pingy](https://pingy.ro)
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
