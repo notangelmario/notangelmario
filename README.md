@@ -3,7 +3,7 @@
 
 <br/>
 
-- 🔭 I’m currently working on **blockchain tech**
+- 🔭 I’m currently working on **myself**
 
 - 🤝 I’m looking for help with **nothing yet**
 
