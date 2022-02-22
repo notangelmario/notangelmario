@@ -42,7 +42,7 @@ function Socials() {
 					{socials.map((social) => (
 						<ListItemButton key={social.name}>
 							<ListItemAvatar>
-								<Avatar sx={{ backgroundColor: 'secondary.main', color: 'secondary.contrastText' }}>
+								<Avatar sx={{ backgroundColor: 'primary.main', color: 'primary.contrastText' }}>
 									{social.icon}
 								</Avatar>
 							</ListItemAvatar>
