@@ -47,7 +47,7 @@ function Socials() {
 							rel='noopener noreferrer'
 						>
 							<ListItemAvatar>
-								<Avatar sx={{ backgroundColor: 'secondary.main', color: 'secondary.contrastText' }}>
+								<Avatar sx={{ backgroundColor: 'primary.main', color: 'primary.contrastText' }}>
 									{social.icon}
 								</Avatar>
 							</ListItemAvatar>
