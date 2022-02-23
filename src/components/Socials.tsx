@@ -40,7 +40,12 @@ function Socials() {
 			<Collapse in={open}>
 				<List>
 					{socials.map((social) => (
-						<ListItemButton key={social.name}>
+						<ListItemButton 
+							key={social.name}
+							href={social.url}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<ListItemAvatar>
 								<Avatar sx={{ backgroundColor: 'primary.main', color: 'primary.contrastText' }}>
 									{social.icon}
