@@ -41,6 +41,7 @@ function Socials() {
 				<List>
 					{socials.map((social) => (
 						<ListItemButton 
+							component='a'
 							key={social.name}
 							href={social.url}
 							target='_blank'
