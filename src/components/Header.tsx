@@ -1,4 +1,5 @@
 import { Card, CardMedia, Avatar, Container } from '@mui/material'
+import { ParallaxBanner } from 'react-scroll-parallax'
 
 type Props = {
 	imageUrl: string
@@ -17,7 +18,13 @@ function Header(props: Props) {
 			}}
 		>
 			<CardMedia
-				image={props.imageUrl || 'none'}
+				component={ParallaxBanner}
+				layers={[
+					{
+						image: props.imageUrl,
+						speed: -15,
+					}
+				]}
 				sx={{
 					height: 'max(25vw, 256px)',
 				}}

@@ -7,6 +7,7 @@ import { usePalette } from 'react-palette'
 import HomePage from './pages/HomePage';
 import Splash from './components/Splash';
 import Footer from './components/Footer';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 
@@ -94,12 +95,14 @@ function App() {
 
 
 	return (
-		<ThemeProvider theme={theme}>
-			<CssBaseline/>
-			<Splash value={loadingValue}/>
-			<HomePage wallUrl={wallUrl}/>
-			<Footer />
-		</ThemeProvider>
+		<ParallaxProvider>
+			<ThemeProvider theme={theme}>
+				<CssBaseline/>
+				<Splash value={loadingValue}/>
+				<HomePage wallUrl={wallUrl}/>
+				<Footer />
+			</ThemeProvider>
+		</ParallaxProvider>
 	)
 }
 
