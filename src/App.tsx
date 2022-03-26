@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import Splash from './components/Splash';
 import Footer from './components/Footer';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import AdBanner from './components/AdBanner';
 
 
 
@@ -97,8 +98,9 @@ function App() {
 	return (
 		<ParallaxProvider>
 			<ThemeProvider theme={theme}>
-				<CssBaseline/>
+				<CssBaseline enableColorScheme/>
 				<Splash value={loadingValue}/>
+				<AdBanner />
 				<HomePage wallUrl={wallUrl}/>
 				<Footer />
 			</ThemeProvider>

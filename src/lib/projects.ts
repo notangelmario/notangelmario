@@ -7,6 +7,11 @@ type Project = {
 
 const projects: Project[] = [
 	{
+		name: 'Paquet',
+		cover: '/assets/paquet.png',
+		description: 'From the ashes of Pingy, Paquet is a new delivery service better than ever before. A platform that allows you to easily order food from nearby shops.'
+	},
+	{
 		name: 'Whoogle',
 		cover: 'https://whoogle.angelmario.eu/static/img/logo.png',
 		url: 'https://whoogle.angelmario.eu',
