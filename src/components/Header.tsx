@@ -15,6 +15,7 @@ function Header(props: Props) {
 				borderTopLeftRadius: 0,
 				borderTopRightRadius: 0,
 				marginBottom: '48px',
+				overflow: 'hidden',
 			}}
 		>
 			<CardMedia

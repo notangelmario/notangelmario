@@ -13,7 +13,7 @@ function AdBanner() {
 				horizontal: 'center',
 				vertical: 'bottom',
 			}}
-			// autoHideDuration={10000}
+			autoHideDuration={10000}
 			TransitionComponent={Slide}
 			onClose={() => setOpen(false)}
 		>

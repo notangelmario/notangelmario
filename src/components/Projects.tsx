@@ -57,6 +57,7 @@ function Projects() {
 									<Card
 										sx={{
 											backgroundColor: 'background.default',
+											overflow: 'hidden'
 										}}
 									>
 										<CardActionArea
