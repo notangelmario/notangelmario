@@ -67,13 +67,7 @@ function Projects() {
 											}}
 										>
 											<CardMedia
-												component={ParallaxBanner}
-												layers={[
-													{
-														image: project.cover,
-														speed: -2,
-													}
-												]}
+												image={project.cover}
 												sx={{
 													backgroundColor: 'background.default',
 													backgroundPosition: 'center',
@@ -112,8 +106,8 @@ function Projects() {
 					alt={projects[projectSelected].name}
 					style={{
 						backgroundColor: 'white',
-						minHeight: '128px',
-						objectFit: 'contain',
+						height: '300px',
+						objectFit: 'cover'
 					}}
 				/>
 				<DialogContent>
