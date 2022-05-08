@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Typography, Card, CardMedia, CardActionArea, Box, Container, Stack, Grid, Dialog, DialogActions, DialogContent, DialogContentText, Button } from '@mui/material'
 import { projects } from '../lib/projects'
 import { ReactComponent as Wave }  from '../assets/wave.svg'
-import { ParallaxBanner } from 'react-scroll-parallax';
 
 
 
