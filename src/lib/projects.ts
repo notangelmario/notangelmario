@@ -12,12 +12,6 @@ const projects: Project[] = [
 		description: 'From the ashes of Pingy, Paquet is a new delivery service better than ever before. A platform that allows you to easily order food from nearby shops.'
 	},
 	{
-		name: 'Whoogle',
-		cover: 'https://whoogle.angelmario.eu/static/img/logo.png',
-		url: 'https://whoogle.angelmario.eu',
-		description: 'An instance of Whoogle, a self-hosted, ad-free, privacy-respecting metasearch engine. Currently running in production.',
-	},
-	{
 		name: 'Pingy',
 		cover: '/assets/pingy.png',
 		description: 'A delivery service for local shops and communities. Pingy was a cross-platform app available to everyone. Unfortunately, it is no longer available due to funding.'
