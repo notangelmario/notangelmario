@@ -7,9 +7,14 @@ type Project = {
 
 const projects: Project[] = [
 	{
+		name: 'O sama de cuvinte',
+		cover: '/assets/podcast.jpg',
+		description: 'A new podcast made by me to share with others my experience and my point of view.'
+	},
+	{
 		name: 'Paquet',
 		cover: '/assets/paquet.png',
-		description: 'From the ashes of Pingy, Paquet is a new delivery service better than ever before. A platform that allows you to easily order food from nearby shops.'
+		description: 'From the ashes of Pingy, Paquet is a new platform made by the community for the community.'
 	},
 	{
 		name: 'Pingy',
