@@ -3,9 +3,9 @@
 
 <br/>
 
-- 🔭 I’m currently working on [Paquet](https://paquet.ro)
+- 🔭 I’m currently working on **myself**
 
-- 🤝 I’m looking for help with [Paquet](https://paquet.ro)
+- 🤝 I’m looking for help with **nothing yet**
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
