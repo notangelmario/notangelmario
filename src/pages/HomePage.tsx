@@ -20,7 +20,7 @@ function HomePage(props: Props) {
 					<Typography
 						variant='h2'
 					>
-						Savin Mario
+						Savin Angel-Mario
 					</Typography>
 					<Socials />
 				</Stack>

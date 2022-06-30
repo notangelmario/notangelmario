@@ -82,8 +82,8 @@ function App() {
 						light: wallPalette?.data.lightMuted || defaultTheme.palette.secondary.light,
 					},
 					background: {
-						default: prefersDarkMode ? '#121212' : '#fff',
-						paper: prefersDarkMode ? '#242424' : wallPalette?.data.lightMuted ? lightenDarkenColor(wallPalette?.data.lightMuted, 60) : defaultTheme.palette.background.paper,
+						default: prefersDarkMode ? '#121212' : wallPalette?.data.lightMuted ? lightenDarkenColor(wallPalette?.data.lightMuted, 60) : defaultTheme.palette.background.paper,
+						paper: prefersDarkMode ? '#242424' : wallPalette?.data.muted ? lightenDarkenColor(wallPalette?.data.muted, 60) : defaultTheme.palette.background.paper,
 					},
 					mode: prefersDarkMode ? 'dark' : 'light',
 				},

@@ -6,9 +6,6 @@ import { ReactComponent as Wave }  from '../assets/wave.svg'
 
 
 function Projects() {
-	const [dialogOpen, setDialogOpen] = useState(false)
-	const [projectSelected, setProjectSelected] = useState<number>(0)
-
 	return (
 		<div style={{
 			display: 'flex',
@@ -60,10 +57,10 @@ function Projects() {
 										}}
 									>
 										<CardActionArea
-											onClick={() => {
-												setProjectSelected(idx)
-												setDialogOpen(true)
-											}}
+											component="a"
+											target="_blank"
+											rel="noopener noreferrer"
+											href={project?.url}
 										>
 											<CardMedia
 												image={project.cover}
@@ -94,40 +91,6 @@ function Projects() {
 			>
 				<Wave width='100%' height='128'/>
 			</Box>
-			<Dialog
-				open={dialogOpen}
-				onClose={() => setDialogOpen(false)}
-				maxWidth='md'
-				fullWidth
-			>
-				<img
-					src={projects[projectSelected].cover}
-					alt={projects[projectSelected].name}
-					style={{
-						backgroundColor: 'white',
-						height: '300px',
-						objectFit: 'cover'
-					}}
-				/>
-				<DialogContent>
-					<Typography
-						variant='h4'
-					>
-						About {projects[projectSelected].name}
-					</Typography>
-					<DialogContentText>
-						{projects[projectSelected]?.description}
-					</DialogContentText>
-				</DialogContent>
-				<DialogActions>
-					<Button
-						variant='contained'
-						onClick={() => setDialogOpen(false)}
-					>
-						Ok
-					</Button>
-				</DialogActions>
-			</Dialog>
 		</div>
 	)
 }

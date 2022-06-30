@@ -13,7 +13,7 @@ const defaultTheme = createTheme({
 	},
 	shadows: Array(25).fill('none') as Shadows,
 	shape: {
-		borderRadius: 20,
+		borderRadius: 25,
 	},
 	components: {
 		MuiContainer: {
