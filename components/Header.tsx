@@ -16,6 +16,8 @@ export default function Header(props: Props) {
 				class={tw`absolute rounded-b h-44 w-full`}
 				style={{
 					backgroundImage: `url(${props.headerImage})`,
+					backgroundSize: "cover",
+					backgroundPosition: "center"
 				}}
 			>
 			</div>

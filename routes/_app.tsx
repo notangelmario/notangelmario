@@ -3,6 +3,7 @@ import { h } from "preact";
 import { tw } from "@twind";
 import type { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
+import Footer from "../components/Footer.tsx";
 
 export default function App(props: AppProps) {
 	return (
@@ -12,33 +13,7 @@ export default function App(props: AppProps) {
 					name="viewport"
 					content="width=device-width, initial-scale=1, user-scalable=0"
 				/>
-				<link rel="apple-touch-icon" href="/icon.png" />
-				<link
-					rel="apple-touch-icon"
-					sizes="180x180"
-					href="/apple-touch-icon.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="32x32"
-					href="/favicon-32x32.png"
-				/>
-				<link
-					rel="icon"
-					type="image/png"
-					sizes="16x16"
-					href="/favicon-16x16.png"
-				/>
-				<link rel="manifest" href="/site.webmanifest" />
-				{/* @ts-ignore */}
-				<link
-					rel="mask-icon"
-					href="/safari-pinned-tab.svg"
-					// @ts-ignore: Color is used in MacOS Safari
-					color="#8267be"
-				/>
-				<meta name="msapplication-TileColor" content="#8267be" />
+				<link rel="icon" href="/profile.png" />
 				<meta name="color-scheme" content="light dark" />
 				<meta
 					name="theme-color"
@@ -51,22 +26,10 @@ export default function App(props: AppProps) {
 					content="#ffffff"
 				/>
 
-				<title>Paquet</title>
+				<title>Savin Angel-Mario</title>
 				<meta
 					name="description"
-					content="Check out Paquet to find the best web apps on the open web."
-				/>
-				<meta property="og:image:width" content="1024" />
-				<meta property="og:image:height" content="536" />
-				<meta
-					property="og:description"
-					content="Check out Paquet to find the best web apps on the open web."
-				/>
-				<meta property="og:title" content="Paquet - The web app shop" />
-				<meta property="og:url" content="https://paquet.shop" />
-				<meta
-					property="og:image"
-					content="https://paquet.shop/og-image.jpg"
+					content="My bio"
 				/>
 
 				<link href="/global.css" rel="stylesheet" />
@@ -86,6 +49,7 @@ export default function App(props: AppProps) {
 			<main class={tw`dark:text-white`} onTouchStart="">
 				<props.Component />
 			</main>
+			<Footer />
 		</html>
 	);
 }

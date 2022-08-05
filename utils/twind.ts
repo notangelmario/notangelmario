@@ -8,8 +8,7 @@ export const config: Configuration = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#8267be",
-				secondary: "#D77fa1",
+				primary: "#d4cafa",
 				dark: "#212121",
 				paper: {
 					light: "#f0f0f0",
@@ -17,7 +16,7 @@ export const config: Configuration = {
 				},
 			},
 			borderRadius: {
-				DEFAULT: "0.95rem",
+				DEFAULT: "1.5rem",
 			},
 			backdropBlur: {
 				DEFAULT: "16px",
