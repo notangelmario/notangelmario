@@ -19,7 +19,28 @@ export default function Home(props: PageProps<{ headerImage: string }>) {
 					Savin Angel-Mario
 				</h1>
 				<Links />
-			</Container>				
+				<a
+					href="/changelog"
+					class={tw`
+						mt-2
+						p-4
+						block
+						bg-primary
+						text-black
+						rounded
+					`}
+				>
+					<span class={tw`!text-base !align-middle material-symbols-outlined mr-2`}>
+						history
+					</span>
+					Life Changelog
+					<span
+						class={tw`p-2 bg-green-500 rounded-full text-xs align-middle ml-2`}
+					>
+						NEW
+					</span>
+				</a>	
+			</Container>			
 			<Wave color="#d4cafa"/>
 			<div
 				class={tw`bg-primary text-black`}
