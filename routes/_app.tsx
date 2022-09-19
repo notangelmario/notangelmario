@@ -1,9 +1,5 @@
-/**@jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
 import type { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
-import Footer from "../components/Footer.tsx";
 
 export default function App(props: AppProps) {
 	return (
@@ -17,13 +13,7 @@ export default function App(props: AppProps) {
 				<meta name="color-scheme" content="light dark" />
 				<meta
 					name="theme-color"
-					media="(prefers-color-scheme: dark)"
-					content="#212121"
-				/>
-				<meta
-					name="theme-color"
-					media="(prefers-color-scheme: light)"
-					content="#ffffff"
+					content="#d4cafa"
 				/>
 
 				<title>Savin Angel-Mario</title>
@@ -46,10 +36,9 @@ export default function App(props: AppProps) {
 				/>
 			</Head>
 			{/* @ts-ignore */}
-			<main class={tw`dark:text-white`} onTouchStart="">
+			<main class="h-full" onTouchStart="">
 				<props.Component />
 			</main>
-			<Footer />
 		</html>
 	);
 }

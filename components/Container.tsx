@@ -1,6 +1,4 @@
-/**@jsx h */
-import { h, type JSX } from "preact";
-import { tw } from "@twind";
+import { type JSX } from "preact";
 
 export type Props = {
 	disableGutters?: boolean;
@@ -10,9 +8,9 @@ const Container = (props: Props & JSX.IntrinsicElements["h1"]) => {
 	return (
 		<div
 			{...props}
-			class={`${tw`md:container
+			class={`md:container
 
-				${!props.disableGutters && "px-4"}`} 
+				${!props.disableGutters && "px-4"}
 				${props.class || ""}
 			`}
 		>

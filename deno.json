@@ -4,7 +4,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strictFunctionTypes": true
+    "strictFunctionTypes": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   },
   "tasks": {
     "start": "deno run -A --watch=static/,routes/ dev.ts",
@@ -13,16 +15,30 @@
   "importMap": "./import_map.json",
   "lint": {
     "files": {
-      "include": ["routes/", "islands/", "utils/", "components/"]
+      "include": [
+        "routes/",
+        "islands/",
+        "utils/",
+        "components/"
+      ]
     },
     "rules": {
-      "tags": ["recommended"],
-      "include": ["ban-untagged-todo"]
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-untagged-todo"
+      ]
     }
   },
   "fmt": {
     "files": {
-      "include": ["routes/", "islands/", "utils/", "components/"]
+      "include": [
+        "routes/",
+        "islands/",
+        "utils/",
+        "components/"
+      ]
     },
     "options": {
       "useTabs": true,

@@ -1,44 +1,28 @@
-/**@jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
-import Container from "./Container.tsx";
 
-type Props = {
-	headerImage: string;
-};
-
-export default function Header(props: Props) {
+export default function Header() {
 	return (
 		<div
-			class={tw`relative h-56`}
+			class="flex gap-4 mb-4"
 		>
-			<div
-				class={tw`absolute rounded-b h-44 w-full`}
-				style={{
-					backgroundImage: `url(${props.headerImage})`,
-					backgroundSize: "cover",
-					backgroundPosition: "center"
-				}}
-			>
-			</div>
-			<Container>
-				<div
-					class={tw`
-						absolute
-						flex justify-center items-center
-						rounded-full w-36 h-36
-						mt-20
-						bg-white dark:bg-dark
-					`}
+			<img
+				src="/profile.png"
+				class="w-16 h-16 rounded-full md:(w-48 h-48)"
+			/>
+			<div>
+				<h1
+					class="text-2xl font-bold mb-2 md:text-5xl"
 				>
-					<img
-						class={tw`
-							rounded-full w-32 h-32
-						`}
-						src="/profile.png"
-					/>
-				</div>
-			</Container>
+					Savin Angel-Mario
+				</h1>
+				<p>
+					Hi! I'm a developer and a big time tech enthusiast.
+					I like to code in TypeScript, C, Go and Python.
+					I love to make my code fast and efficient.
+					I am the main developer and CEO of <a href="https://fructo.land" target="_blank">Fructo</a>.
+					<br/><br/>
+					Also love web standards. P.S. This website was built with <a href="https://fresh.deno.dev" target="_blank">Fresh</a> and <a href="https://deno.land" target="_blank">Deno</a>
+				</p>
+			</div>
 		</div>
 	);
 }
