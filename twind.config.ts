@@ -6,7 +6,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#d4cafa",
+				purple: "#d4cafa",
+				red: "#ff6961",
 				dark: "#212121",
 			},
 			borderRadius: {

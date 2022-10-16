@@ -3,7 +3,7 @@ import Header from "../components/Header.tsx";
 import Links from "../components/Links.tsx";
 import Wave from "../components/Wave.tsx";
 
-export default function Home(props: PageProps<{ headerImage: string }>) {
+export default function Home() {
 	return (
 		<div class="h-full flex flex-col justify-center">
 			<Wave/>
@@ -11,9 +11,21 @@ export default function Home(props: PageProps<{ headerImage: string }>) {
 				<Container>
 					<Header />
 					<Links />
+					<a
+						href="/more"
+						class="bg-purple rounded block text-center mx-auto text-dark mt-4 no-underline py-2 px-4"
+					>
+						There's more...
+					</a>
 				</Container>
 			</div>
 			<Wave upsideDown/>
+			<a
+				href="mailto:savin@angelmario.eu"
+				class="text-center text-dark no-underline"
+			>
+				savin@angelmario.eu
+			</a>
 		</div>
 	);
 }

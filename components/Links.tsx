@@ -9,6 +9,7 @@ export default function Links() {
 				<>
 					<a
 						class="underline block"
+						target="_blank"
 						key={idx}
 						href={link.url}
 					>
