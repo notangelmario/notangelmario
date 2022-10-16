@@ -20,12 +20,6 @@ export default function Home() {
 				</Container>
 			</div>
 			<Wave upsideDown/>
-			<a
-				href="mailto:savin@angelmario.eu"
-				class="text-center text-dark no-underline"
-			>
-				savin@angelmario.eu
-			</a>
 		</div>
 	);
 }

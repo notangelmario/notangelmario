@@ -5,6 +5,10 @@ type Link = {
 
 export const links: Link[] = [
 	{
+		name: "E-Mail",
+		url: "mailto:savin@angelmario.eu",
+	},
+	{
 		name: "Instagram",
 		url: "https://instagram.com/notangelmario",
 	},
