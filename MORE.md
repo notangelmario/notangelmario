@@ -1,7 +1,9 @@
 <img
-	src="/images/faculty.jpg"
+	src="static/images/faculty.jpg"
 	alt="Faculty Photo"
 	width="100%"
+	height="150px"
+	style="object-fit: cover"
 />
 
 # Student
@@ -11,9 +13,11 @@ Currently studying English and Slovak. I am aiming to not only help myself,
 but also help other students and the faculty in any way I can.
 
 <img
-	src="/images/volunteer.jpg"
+	src="static/images/volunteer.jpg"
 	alt="Volunteering Photo"
 	width="100%"
+	height="150px"
+	style="object-fit: cover"
 />
 
 # Volunteering
@@ -23,9 +27,11 @@ Volunteering helped me shape up to be what I am. I own 3 youthpasses. I traveled
 [Sinaia](https://ro.wikipedia.org/wiki/Sinaia) and much more. 
 
 <img
-	src="/images/guitar.jpg"
+	src="static/images/guitar.jpg"
 	alt="Guitar Photo"
 	width="100%"
+	height="150px"
+	style="object-fit: cover"
 />
 
 # Music
@@ -35,9 +41,11 @@ love to make music. Music has always been a way for me to express my
 feelings, stories and love.
 
 <img
-	src="/images/draw.jpg"
+	src="static/images/draw.jpg"
 	alt="City Drawing Photo"
 	width="100%"
+	height="150px"
+	style="object-fit: cover"
 />
 
 # Drawing

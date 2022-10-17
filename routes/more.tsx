@@ -19,7 +19,7 @@ export default function Home({ data: { markdown } }: { data: { markdown: string 
 					{CSS}
 				</style>
 			</Head>
-			<div class="">
+			<div class="py-16">
 				<Wave/>
 				<div class="bg-white dark:bg-dark py-4">
 					<Container>
@@ -40,7 +40,9 @@ export default function Home({ data: { markdown } }: { data: { markdown: string 
 export const handler: Handler = async (_, ctx) => {
 	const text = await Deno.readTextFile("MORE.md");
 
-	const markdown = render(text)
+	const markdown: string = render(text);
+	
+	markdown.replace("static/images", "images");
 
-	return ctx.render({ markdown })
+	return ctx.render({ markdown });
 }
