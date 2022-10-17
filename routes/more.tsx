@@ -1,3 +1,4 @@
+import { join } from "$std/path/mod.ts";
 import { Handler } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 import { CSS, render } from "gfm";
@@ -38,11 +39,9 @@ export default function Home({ data: { markdown } }: { data: { markdown: string 
 
 
 export const handler: Handler = async (_, ctx) => {
-	const text = await Deno.readTextFile("MORE.md");
+	const text = await Deno.readTextFile(join("static", "MORE.md"));
 
 	const markdown: string = render(text);
 	
-	markdown.replace("static/images", "images");
-
 	return ctx.render({ markdown });
 }
