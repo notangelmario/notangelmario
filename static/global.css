@@ -6,7 +6,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	overflow-x: hidden;
-	background-color: #d4cafa;
+	background-color: #212121;
 	height: 100%;
 }
 
@@ -28,7 +28,7 @@ body {
 
 ::selection {
 	background-color: #d4cafa;
-	color: #fff;
+	color: #000;
 }
 
 a {

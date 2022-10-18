@@ -10,7 +10,7 @@ export default function App(props: AppProps) {
 					content="width=device-width, initial-scale=1, user-scalable=0"
 				/>
 				<link rel="icon" href="/profile.png" />
-				<meta name="color-scheme" content="light dark" />
+				<meta name="color-scheme" content="dark" />
 				<meta
 					name="theme-color"
 					content="#d4cafa"

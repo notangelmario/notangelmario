@@ -4,6 +4,7 @@ import { Head } from "$fresh/runtime.ts";
 import { CSS, render } from "gfm";
 import Container from "../components/Container.tsx";
 import Wave from "../components/Wave.tsx";
+import Navbar from "../components/Navbar.tsx";
 
 export default function Home({ data: { markdown } }: { data: { markdown: string } }) {
 	return (
@@ -20,13 +21,13 @@ export default function Home({ data: { markdown } }: { data: { markdown: string 
 					{CSS}
 				</style>
 			</Head>
-			<div class="py-16">
-				<Wave/>
-				<div class="bg-white dark:bg-dark py-4">
+			<Navbar />
+			<div class="pb-16">
+				<div class="bg-dark py-4">
 					<Container>
 						<div
 							class="mb-4 markdown-body w-full"
-							data-color-mode="light" data-light-theme="light" data-dark-theme="dark"
+							data-color-mode="dark" data-dark-theme="dark"
 							dangerouslySetInnerHTML={{ __html: markdown }}
 						></div>
 					</Container>

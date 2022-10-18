@@ -5,9 +5,9 @@ import Wave from "../components/Wave.tsx";
 
 export default function Home() {
 	return (
-		<div class="h-full flex flex-col justify-center">
+		<div class="h-full flex flex-col justify-center bg-purple">
 			<Wave/>
-			<div class="bg-white dark:bg-dark py-4">
+			<div class="bg-dark py-4">
 				<Container>
 					<Header />
 					<Links />
