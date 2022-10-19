@@ -1,39 +1,27 @@
 type Link = {
-	name: string;
+	icon: string;
 	url: string;
 }
 
 export const links: Link[] = [
 	{
-		name: "E-Mail",
+		icon: "email",
 		url: "mailto:savin@angelmario.eu",
 	},
 	{
-		name: "Instagram",
+		icon: "instagram",
 		url: "https://instagram.com/notangelmario",
 	},
 	{
-		name: "Youtube",
-		url: "https://youtube.com/channel/UCOrKUfp10MLzXL1g4Jpc9SA"
-	},
-	{
-		name: "Facebook",
+		icon: "facebook",
 		url: "https://facebook.com/notangelmario"
 	},
 	{
-		name: "Steam",
+		icon: "steam",
 		url: "https://steamcommunity.com/id/notangelmario"
 	},
 	{
-		name: "GitHub",
+		icon: "github",
 		url: "https://github.com/notangelmario"
-	},
-	{
-		name: "Spotify",
-		url: "https://open.spotify.com/user/nzsw4dq9snobck6h614im0428"
-	},
-	{
-		name: "Telegram",
-		url: "https://t.me/notangelmario"
 	}
 ]

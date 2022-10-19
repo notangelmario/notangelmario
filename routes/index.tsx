@@ -1,25 +1,39 @@
+import type { Handler, PageProps } from "$fresh/server.ts";
+import { join } from "$std/path/mod.ts";
 import Container from "../components/Container.tsx";
 import Header from "../components/Header.tsx";
-import Links from "../components/Links.tsx";
-import Wave from "../components/Wave.tsx";
+import MoreButton from "../islands/MoreButton.tsx";
 
-export default function Home() {
+export default function Home(props: PageProps<{ image: string }>) {
 	return (
-		<div class="h-full flex flex-col justify-center bg-purple">
-			<Wave/>
-			<div class="bg-dark py-4">
+		<div class="relative h-full flex flex-col justify-center overflow-hidden">
+			<img
+				src={props.data.image}
+				class="absolute top-32 w-5/6 md:(top-16 w-4/6) object-cover opacity-30 z-0 rounded pointer-events-none"
+			/>
+			<div class="z-10">
 				<Container>
 					<Header />
-					<Links />
 					<a
 						href="/more"
-						class="bg-purple rounded block text-center mx-auto text-dark mt-4 no-underline py-2 px-4"
 					>
-						There's more...
+						<MoreButton />
 					</a>
 				</Container>
 			</div>
-			<Wave upsideDown/>
 		</div>
 	);
+}
+
+export const handler: Handler = async (_, ctx) => {
+	const files = Deno.readDir(join("static", "images"));
+	const images = [];
+
+	for await (const file of files) {
+		file.isFile && images.push(join("images", file.name));
+	}
+
+	return ctx.render({
+		image: images[Math.floor(Math.random() * images.length)]
+	});
 }
