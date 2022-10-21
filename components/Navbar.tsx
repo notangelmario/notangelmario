@@ -1,13 +1,7 @@
-
-
 const links = [
 	{
 		href: "/more",
 		title: "More"
-	},
-	{
-		href: "/wrote",
-		title: "Writings"
 	}
 ]
 
