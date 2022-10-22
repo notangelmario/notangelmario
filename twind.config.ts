@@ -7,8 +7,8 @@ export default {
 		extend: {
 			colors: {
 				purple: "#d4cafa",
-				dark: "#121212",
-				darkish: "#212121"
+				dark: "#212121",
+				darkish: "#343434"
 			},
 			borderRadius: {
 				DEFAULT: "2.5rem",

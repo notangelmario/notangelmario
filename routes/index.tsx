@@ -6,10 +6,10 @@ import MoreButton from "../islands/MoreButton.tsx";
 
 export default function Home(props: PageProps<{ image: string }>) {
 	return (
-		<div class="relative h-full flex flex-col justify-center overflow-hidden">
+		<div class="relative h-full flex justify-center items-center overflow-hidden">
 			<img
 				src={props.data.image}
-				class="absolute top-32 w-5/6 md:(top-16 w-4/6) object-cover opacity-40 z-0 rounded pointer-events-none"
+				class="absolute top-0 left-0 w-5/6 md:(w-4/6) object-cover z-0 rounded opacity-40 pointer-events-none"
 			/>
 			<div class="z-10">
 				<Container>
