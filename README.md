@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **myself**
 
-- 🤝 I’m looking for help with **nothing yet**
+- 🤝 I’m looking for help with [Fructo](https://fructo.land)
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
