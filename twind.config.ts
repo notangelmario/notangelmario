@@ -7,12 +7,11 @@ export default {
 		extend: {
 			colors: {
 				purple: "#d4cafa",
-				red: "#ff6961",
-				dark: "#212121",
-				darkish: "#323232"
+				dark: "#121212",
+				darkish: "#212121"
 			},
 			borderRadius: {
-				DEFAULT: ".5rem",
+				DEFAULT: "2.5rem",
 			},
 			container: {
 				center: true,

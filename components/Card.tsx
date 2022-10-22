@@ -10,7 +10,7 @@ export function Card(props: Props & JSX.IntrinsicElements["div"]) {
 		<div
 			class="relative rounded p-8 overflow-hidden"
 		>
-			<h2 class="relative z-10 text-3xl text-bold">
+			<h2 class="relative z-10 text-5xl text-bold">
 				{props.title}
 			</h2>
 			<p class="relative z-10">
