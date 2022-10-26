@@ -9,7 +9,7 @@ export default function Home(props: PageProps<{ image: string }>) {
 		<div class="relative h-full flex justify-center items-center overflow-hidden">
 			<img
 				src={props.data.image}
-				class="absolute top-0 left-0 w-5/6 md:(w-4/6) object-cover z-0 rounded opacity-40 pointer-events-none"
+				class="absolute top-2 left-0 w-5/6 md:(w-4/6) object-cover z-0 rounded opacity-40 pointer-events-none"
 			/>
 			<div class="z-10">
 				<Container>

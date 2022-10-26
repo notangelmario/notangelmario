@@ -1,6 +1,5 @@
 # I'm Angel Mario
 
-
 - 🔭 I’m currently working on **myself**
 
 - 🤝 I’m looking for help with [Fructo](https://fructo.land)
