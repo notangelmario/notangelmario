@@ -1,5 +1,7 @@
 # I'm Angel Mario
 
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en&theme=gruvbox" alt="notangelmario" />
+
 - 🔭 I’m currently working on **myself**
 
 - 🤝 I’m looking for help with [Fructo](https://fructo.land)
@@ -9,8 +11,6 @@
 - ❤️ I love collaborating
 
 - 📫 Reach me at **savin@angelmario.eu**
-
-<img src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en&theme=gruvbox" alt="notangelmario" /><img src="https://github-readme-stats.vercel.app/api/top-langs?username=notangelmario&show_icons=true&locale=en&layout=compact&theme=gruvbox" alt="notangelmario" />
 
 # 🧰 Tools & Languages
 
