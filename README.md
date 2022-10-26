@@ -1,4 +1,4 @@
-<h1>I'm Angel Mario</h1>
+# I'm Angel Mario
 
 
 - 🔭 I’m currently working on **myself**
@@ -11,5 +11,5 @@
 
 - 📫 Reach me at **savin@angelmario.eu**
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=notangelmario&show_icons=true&locale=en&layout=compact" alt="notangelmario" />
-<img src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en" alt="notangelmario" />
+| <img src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en&theme=gruvbox" alt="notangelmario" /> | <img src="https://github-readme-stats.vercel.app/api/top-langs?username=notangelmario&show_icons=true&locale=en&layout=compact&theme=gruvbox" alt="notangelmario" /> |
+| ------------- | ------------- |
