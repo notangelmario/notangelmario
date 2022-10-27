@@ -1,15 +1,13 @@
-import "$std/dotenv/load.ts";
-import type { Handler, PageProps } from "$fresh/server.ts";
 import Container from "../components/Container.tsx";
 import Header from "../components/Header.tsx";
 import Card from "../components/Card.tsx";
 
-export default function Home(props: PageProps<{ image: string }>) {
+export default function Home() {
 	return (
 		<div class="relative h-full flex justify-center">
 			<img
-				src="https://source.unsplash.com/random/900×700/?abstract,colors,painting"
-				class="fixed top-2 left-0 w-5/6 md:(w-4/6) object-cover z-0 rounded opacity-40 pointer-events-none"
+				src="https://source.unsplash.com/random/700×900/?abstract,colors,painting"
+				class="fixed top-2 left-0 object-cover z-0 rounded opacity-40 pointer-events-none"
 			/>
 			<div class="z-10 py-32" style={{ height: "min-content" }}>
 				<Container>
