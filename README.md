@@ -19,6 +19,7 @@ Those are the tools and languages I know and use:
 ## Tools
 * [Neovim](https://neovim.io/)
 * [zsh](https://www.zsh.org/)
+* [Alacritty](https://alacritty.org/)
 * [Marker](https://marker.fructo.land)
 * [markdownc](https://github.com/notangelmario/markdownc)
 
