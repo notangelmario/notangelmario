@@ -1,4 +1,4 @@
-export default function Button(props: { children: string, class?: string }) {
+export default function Button(props: { children: string; class?: string }) {
 	return (
 		<button
 			class={`
@@ -11,5 +11,5 @@ export default function Button(props: { children: string, class?: string }) {
 		>
 			{props.children}
 		</button>
-	)
+	);
 }

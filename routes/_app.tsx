@@ -1,7 +1,6 @@
 import type { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 
-
 export default function App(props: AppProps) {
 	return (
 		<html>

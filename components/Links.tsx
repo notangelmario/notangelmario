@@ -2,9 +2,7 @@ import { links } from "../lib/links.ts";
 
 export default function Links() {
 	return (
-		<div
-			class="flex flex-row gap-x-2 flex-wrap"
-		>
+		<div class="flex flex-row gap-x-2 flex-wrap">
 			{links.map((link, idx) => (
 				<a
 					class="block"
@@ -19,5 +17,5 @@ export default function Links() {
 				</a>
 			))}
 		</div>
-	)
+	);
 }
