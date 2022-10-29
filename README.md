@@ -35,3 +35,5 @@ Those are the tools and languages I know and use:
 This repo also hosts [my personal website](https://angelmario.eu). This website 
 was made with a custom markdown framework. If you want, use it. I don't guarantee
 stability.
+
+Might actually make this framework independent.
