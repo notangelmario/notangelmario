@@ -1,16 +1,10 @@
 html,
 body {
 	margin: 0;
-	font-family: "Fredoka", sans-serif !important;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	overflow-x: hidden;
-	background-color: #121212;
-	height: 100%;
-	background-image:  radial-gradient(#eee 0.5px, transparent 0.5px), radial-gradient(#eee 0.5px, #121212 0.5px);
-	background-size: 30px 30px;
-	background-position: 0 0,15px 15px;
 }
 
 *:not(body) {
@@ -29,12 +23,77 @@ body {
 	-webkit-touch-callout: none;
 }
 
-::selection {
-	background-color: #d4cafa;
-	color: #000;
+main {
+  font-family: monospace, monospace;
+  max-width: 38rem;
+  padding: 2rem;
+  margin: auto;
 }
 
-a {
-	color: #d4cafa;
-	text-decoration-line: underline;
+@media only screen and (max-device-width: 736px) {
+  main {
+    padding: 0rem;
+  }
+}
+
+::selection {
+  background: #d3869b;
+}
+
+body {
+  background: #282828;
+  color:      #ebdbb2;
+}
+
+pre {
+  background-color: #3c3836;
+  padding: 1em;
+  border: 0;
+}
+
+a, a:active, a:visited {
+  color: #b16286;
+  background-color: #1d2021;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: .1rem;
+}
+
+blockquote {
+  border-left: 1px solid #bdae93;
+  margin: 0.5em 10px;
+  padding: 0.5em 10px;
+}
+
+footer {
+  align: center;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #fbf1c7;
+        color:      #3c3836;
+    }
+
+    pre {
+        background-color: #ebdbb2;
+        padding: 1em;
+        border: 0;
+    }
+
+    a, a:active, a:visited {
+        color: #b16286;
+        background-color: #f9f5d7;
+    }
+
+    h1, h2, h3, h4, h5 {
+        margin-bottom: .1rem;
+    }
+
+    blockquote {
+        border-left: 1px solid #655c54;
+        margin: 0.5em 10px;
+        padding: 0.5em 10px;
+    }
 }
