@@ -16,8 +16,8 @@ export default function Header() {
 					founder and main developer of{" "}
 					<a href="https://fructo.land" target="_blank">Fructo</a>. I
 					also built some apps like{" "}
-					<a href="https://miniated.fructo.land" target="_blank">
-						Miniated
+					<a href="https://marker.fructo.land" target="_blank">
+						Marker
 					</a>{" "}
 					and <a href="https://paquet.shop" target="_blank">Paquet</a>.
 				</p>
