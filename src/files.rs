@@ -1,7 +1,7 @@
 use crate::MarkdownFile;
 use walkdir::WalkDir;
 use std::{path::Path, io::Result, fs::{self, create_dir_all}};
-use markdown;
+use comrak::{markdown_to_html, ComrakOptions};
 
 pub fn get_files(pages_dir: &str) -> Vec<MarkdownFile> {
     let mut markdown_files: Vec<MarkdownFile> = Vec::new();
@@ -30,7 +30,6 @@ pub fn get_files(pages_dir: &str) -> Vec<MarkdownFile> {
     return markdown_files;
 }
 
-
 pub fn generate_build_dir(build_dir: &str, static_dir: &str) {
     println!("Creating build folder...");
 
@@ -55,7 +54,19 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
         split.drain(0..1);
 
         let mut html = String::from("<html><head><link rel='stylesheet' href='/global.css'/></head><body><main>");
-        html.push_str(&markdown::to_html(&md_file.body));
+        
+        // Push the markdown file's body to the html string
+        // using comrak to convert it to html
+        // and allow unsafe html to be rendered
+        // by passing the unsafe_ option
+
+        html.push_str(&markdown_to_html(&md_file.body, &ComrakOptions {
+            render: comrak::ComrakRenderOptions {
+                unsafe_: true,
+                ..Default::default()
+            },
+            ..Default::default()
+        }));
         html.push_str("</main></body></html>");
 
         let new_path = 
