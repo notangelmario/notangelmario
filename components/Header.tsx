@@ -2,12 +2,12 @@ import Links from "./Links.tsx";
 
 export default function Header() {
 	return (
-		<div class="flex gap-4 mb-4 bg-darkish rounded p-8">
+		<div class="relative mb-4 bg-darkish rounded p-8">
 			<img
 				src="/profile.png"
-				class="w-16 h-16 rounded-full md:(w-48 h-48)"
+				class="absolute rounded-full w-32 h-32 -top-16 border-8 border-darkish"
 			/>
-			<div>
+			<div class="mt-12">
 				<h1 class="text-2xl font-bold mb-2 md:text-5xl">
 					Savin Angel-Mario
 				</h1>
