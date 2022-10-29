@@ -2,7 +2,7 @@ import Links from "./Links.tsx";
 
 export default function Header() {
 	return (
-		<div class="flex gap-4 mb-4">
+		<div class="flex gap-4 mb-4 bg-darkish rounded p-8">
 			<img
 				src="/profile.png"
 				class="w-16 h-16 rounded-full md:(w-48 h-48)"
