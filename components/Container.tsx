@@ -10,7 +10,7 @@ const Container = (props: Props & JSX.IntrinsicElements["h1"]) => {
 			{...props}
 			class={`md:container
 
-				${!props.disableGutters && "px-8"}
+				${!props.disableGutters && "px-4"}
 				${props.class || ""}
 			`}
 		>

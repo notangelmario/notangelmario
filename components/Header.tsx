@@ -19,7 +19,7 @@ export default function Header() {
 					<a href="https://miniated.fructo.land" target="_blank">
 						Miniated
 					</a>{" "}
-					and <a href="https://paquet.shop" target="_blank">Paquet</a>
+					and <a href="https://paquet.shop" target="_blank">Paquet</a>.
 				</p>
 				<Links />
 			</div>
