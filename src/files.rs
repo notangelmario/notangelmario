@@ -9,7 +9,7 @@ pub fn get_files(pages_dir: &str) -> Vec<MarkdownFile> {
 
     let walker = WalkDir::new(pages_dir).into_iter()
         .filter_map(|e| e.ok())
-        .filter(|e| e.metadata().unwrap().is_file());
+        .filter(|e| e.metadata().expect("Couldn't fetch metadata").is_file());
 
 
     for entry in walker {
@@ -32,11 +32,16 @@ pub fn get_files(pages_dir: &str) -> Vec<MarkdownFile> {
 
 
 pub fn generate_build_dir(build_dir: &str, static_dir: &str) {
+    println!("Creating build folder...");
+
+    fs::remove_dir_all(build_dir)
+        .expect("Couldn't delete existing build folder!");
+
     fs::create_dir_all(build_dir)
-        .expect("Couldn't generate build directory");
+        .expect("Couldn't generate build directory!");
 
     copy_dir_all(static_dir, build_dir)
-        .expect("Couldn't copy static files to build directory");
+        .expect("Couldn't copy static files to build directory!");
 }
 
 pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &str) {
@@ -49,11 +54,10 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
 
         split.drain(0..1);
 
-        println!("{:?}", split);
+        let mut html = String::from("<html><head><link rel='stylesheet' href='/global.css'/></head><body><main>");
+        html.push_str(&markdown::to_html(&md_file.body));
+        html.push_str("</main></body></html>");
 
-        
-
-        let html = markdown::to_html(&md_file.body);
         let new_path = 
             build_dir.to_owned() + 
             "/" + 
@@ -64,7 +68,7 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
 
         if split.len() > 1 {
             create_dir_all(Path::new(&new_path).parent().unwrap())
-                .expect("");
+                .expect("Couldn't create nested directory");
         }
 
         fs::write(new_path, html).unwrap();

@@ -19,8 +19,12 @@ fn main() {
         process::exit(1);
     }
 
-    let markdown_files = get_files(pages_dir);
+    println!("Started build step...\n");
 
+    let markdown_files = get_files(pages_dir);
+    
     generate_build_dir(build_dir, static_dir);
     generate_markdown_files(&markdown_files, build_dir);
+
+    println!("Successfully built {} markdown files", markdown_files.len());
 }

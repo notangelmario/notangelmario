@@ -2,9 +2,9 @@
 
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en&theme=gruvbox" alt="notangelmario" />
 
-- 🔭 I’m currently working on **myself**
+- 🔭 I'm currently working on **myself**
 
-- 🤝 I’m looking for help with [Fructo](https://fructo.land)
+- 🤝 I'm looking for help with [Fructo](https://fructo.land)
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
@@ -29,3 +29,9 @@ Those are the tools and languages I know and use:
 * Rust
 * Python
 * C
+
+### About `notangelmario`
+
+This repo also hosts [my personal website](https://angelmario.eu). This website 
+was made with a custom markdown framework. If you want, use it. I don't guarantee
+stability.
