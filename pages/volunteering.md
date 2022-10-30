@@ -1,10 +1,12 @@
 ---
 title: Volunteering &middot; Savin Angel-Mario
+description: My life as a volunteer and how I got into volunteering
 ---
 
-<img 
-	src="https://source.unsplash.com/random/600x200?istanbul"
+<img
 	width="100%"
+	height="200px"
+	src="/images/volunteer.jpg"
 />
 
 # Volunteering

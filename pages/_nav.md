@@ -1,7 +1,8 @@
-<div style="display: flex; align-items: center; gap: .5rem">
-	<img src="/profile.png" class="no-margin" style="border-radius: 50%" width="32" height="32"/> 
-	<a href="/">Home</a> &middot; 
-	<a href="/programming">Programming</a>
+<div style="display: flex; align-items: center; gap: 1rem">
+	<a href="/">
+	<img src="/profile.png" class="no-margin" width="48" height="48"/> 
+	</a>
+	<a href="/blog">Blog</a>
 </div>
 
 ****

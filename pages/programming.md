@@ -1,11 +1,9 @@
 ---
 title: Programming &middot; Savin Angel-Mario
+description: How did I get into programming and more...
 ---
 
-<img 
-	src="https://source.unsplash.com/random/600x200?laptop,programming,code"
-	width="100%"
-/>
+![](/images/coding.png)
 
 # Programming
 
@@ -39,6 +37,23 @@ and I believe in the future of **web apps**.
 I also love **open source**. Ever since I found out about Linux and
 the open source community, I felt that this is the best way
 that software can evolve.
+
+## My projects
+
+I've had quite a few projects. Here are a few:
+
+| 	| 	|
+|:-:|:-:|
+[![Paquet](/projects/paquet.png)](https://paquet.shop)|[![Pingy](/projects/pingy.png)](https://pingy.ro)
+[![Solander](/projects/solander.png)](https://solander.ro)|[![Pingy](/projects/marker.png)](https://marker.fructo.land)
+
+Some other highlights:
+
+* [Fructo](https://fructo.land)
+* [markdownc](https://github.com/notangelmario/markdownc)
+* [mdserve](https://deno.land/x/mdserve)
+* [pico-w-morse-code](https://github.com/notangelmario/pico-w-morse-code)
+* [Vibrant](https://github.com/notangelmario/vibrant)
 
 ## My toolchain
 

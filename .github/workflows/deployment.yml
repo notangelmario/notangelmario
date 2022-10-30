@@ -27,7 +27,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: cargo run
+      run: cargo run -- build
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1

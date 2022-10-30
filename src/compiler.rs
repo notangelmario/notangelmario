@@ -10,8 +10,10 @@ macro_rules! HEAD {
         "<head>\
             <meta charset=\"utf-8\">\
             <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\
+            <link rel=\"icon\" href=\"/favicon.png\">\
             <link rel=\"stylesheet\" href=\"/theme.css\">\
-            <title>{}</title>\
+            <title>{} &middot; Savin Angel-Mario</title>\
+            <meta name=\"description\" content=\"{}\">\
         </head>"
     };
 }
@@ -25,6 +27,8 @@ pub struct MarkdownFile {
 #[derive(Deserialize)]
 struct FrontMatter {
     pub title: String,
+    pub description: String,
+
     pub nav: Option<bool>,
     pub footer: Option<bool>
 }
@@ -86,6 +90,7 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
         path_split.drain(0..1);
 
         let mut title = path_split.last().unwrap().to_string();
+        let mut description = String::new();
         let mut nav_enabled = true;
         let mut footer_enabled = true;
 
@@ -95,6 +100,7 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
                     Ok(fm) => fm,
                     Err(_) => FrontMatter {
                         title: "".to_string(),
+                        description: "".to_string(),
                         nav: Some(true),
                         footer: Some(true)
                     }
@@ -102,6 +108,10 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
                 
                 if front_matter.title != "" {
                     title = front_matter.title;
+                }
+
+                if front_matter.description != "" {
+                    description = front_matter.description;
                 }
 
                 if front_matter.nav.is_some() {
@@ -116,7 +126,7 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
         }
 
         let mut html = String::from("<html>");
-        html.push_str(&format!(HEAD!(), title));
+        html.push_str(&format!(HEAD!(), title, description));
         html.push_str("<body><main>");
 
         if nav != "" && nav_enabled {
@@ -124,6 +134,14 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
         }
 
         html.push_str(&markdown_to_html(&result.content, &ComrakOptions {
+            extension: comrak::ComrakExtensionOptions {
+                strikethrough: true,
+                table: true,
+                autolink: true,
+                tasklist: true,
+                superscript: false,
+                ..Default::default()
+            },
             render: comrak::ComrakRenderOptions {
                 unsafe_: true,
                 ..Default::default()

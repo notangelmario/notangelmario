@@ -30,6 +30,10 @@ main, footer {
   margin: auto;
 }
 
+footer {
+	padding-top: 0;
+}
+
 ::selection {
   background: #d3869b;
 }
@@ -66,9 +70,10 @@ h1, h2, h3, h4, h5, p, ul {
 }
 
 blockquote {
-  border-left: 1px solid #bdae93;
-  margin: 1rem 10px;
-  padding: 0.5em 10px;
+	opacity: 0.8;
+	border-left: 1px solid #bdae93;
+	margin: 1rem 10px;
+	padding: 0.5em 10px;
 }
 
 blockquote > p {
@@ -89,7 +94,9 @@ img[align="left"] {
 
 img {
 	max-width: 100%;
+	object-fit: cover;
 	margin-bottom: 1rem;
+	border-radius: 6px;
 }
 
 @media (prefers-color-scheme: light) {

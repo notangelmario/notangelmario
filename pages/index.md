@@ -1,17 +1,15 @@
 ---
 title: Savin Angel-Mario
+description: Welcome to my personal website!
 nav: false
 ---
 
-<p class="no-margin">
-	<img
-		src="/profile.png"
-		width="128"
-		height="128"
-		align="left"
-		style="border-radius: 50%"
-	/>
-</p>
+<img
+	src="/profile.png"
+	width="128"
+	height="128"
+	align="left"
+/>
 
 # Hi 👋
 
@@ -24,6 +22,8 @@ I also built some apps like [Marker](https://marker.fructo.land) and [Paquet](ht
 
 ## Read more...
 
-* [Programming](/programming)
-* [Student](/student)
-* [Volunteering](/volunteering)
+### &middot; [Programming](/programming)
+### &middot; [Student](/student)
+### &middot; [Art & Music](/art-and-music)
+### &middot; [Volunteering](/volunteering)
+### &middot; [Blog](/blog)

@@ -1,10 +1,12 @@
 ---
 title: Student &middot; Savin Angel-Mario
+description: My life as a student and the perks I have
 ---
 
-<img 
-	src="https://source.unsplash.com/random/600x200?books"
+<img
 	width="100%"
+	height="200px"
+	src="/images/faculty.jpg"
 />
 
 # Student
