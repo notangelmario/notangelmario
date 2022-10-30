@@ -1,8 +1,8 @@
 use clap::Parser;
 use std::{path::Path, process};
-use crate::files::{get_files, generate_build_dir, generate_markdown_files};
+use crate::compiler::{get_files, generate_build_dir, generate_markdown_files, generate_footer};
 
-mod files;
+mod compiler;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
@@ -36,9 +36,10 @@ fn main() {
     println!("Started build step...\n");
 
     let markdown_files = get_files(pages_dir);
-    
+    let footer = generate_footer(&pages_dir);
+
     generate_build_dir(&build_dir, &static_dir);
-    generate_markdown_files(&markdown_files, &build_dir);
+    generate_markdown_files(&markdown_files, &build_dir, &footer);
 
     println!("Successfully built {} markdown files", markdown_files.len());
 }

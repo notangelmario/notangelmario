@@ -284,6 +284,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "gray_matter"
+version = "0.2.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7f72b62df0267d82db4375544c999805830ba2659116ad4e785a222966b5dafe"
+dependencies = [
+ "serde",
+ "serde_json",
+ "toml",
+ "yaml-rust",
+]
+
+[[package]]
 name = "hashbrown"
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -560,6 +572,8 @@ version = "1.0.0"
 dependencies = [
  "clap 4.0.18",
  "comrak",
+ "gray_matter",
+ "serde",
  "walkdir",
 ]
 
@@ -589,6 +603,9 @@ name = "serde"
 version = "1.0.147"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d193d69bae983fc11a79df82342761dfbf28a99fc8d203dca4c3c1b590948965"
+dependencies = [
+ "serde_derive",
+]
 
 [[package]]
 name = "serde_derive"
@@ -740,6 +757,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "65bb801831d812c562ae7d2bfb531f26e66e4e1f6b17307ba4149c5064710e5b"
 dependencies = [
  "time-core",
+]
+
+[[package]]
+name = "toml"
+version = "0.5.9"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8d82e1a7758622a465f8cee077614c73484dac5b836c02ff6a40d5d1010324d7"
+dependencies = [
+ "serde",
 ]
 
 [[package]]
