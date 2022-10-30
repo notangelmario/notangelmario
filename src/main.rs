@@ -16,7 +16,7 @@ mod compiler;
 struct Args {
     #[arg(short, long, value_parser = directory_validator, default_value_t = String::from("static"))]
     static_dir: String,
-    #[arg(short, long, value_parser = directory_validator, default_value_t = String::from("build"))]
+    #[arg(short, long, default_value_t = String::from("build"))]
     build_dir: String,
     #[arg(short, long, value_parser = directory_validator, default_value_t = String::from("pages"))]
     pages_dir: String,
@@ -42,6 +42,8 @@ fn main() {
     let nav: String = generate_nav(&pages_dir);
 
     generate_build_dir(&build_dir, &static_dir);
+    
+    println!("Generating markdown files...");
     generate_markdown_files(&markdown_files, &build_dir, &nav, &footer);
 
     println!("Successfully built {} markdown files", markdown_files.len());
