@@ -27,7 +27,7 @@ pub struct MarkdownFile {
 #[derive(Deserialize)]
 struct FrontMatter {
     pub title: Option<String>,
-    pub description: Option<String>,
+    pub description: Option<String>
 
     pub nav: Option<bool>,
     pub footer: Option<bool>
@@ -62,6 +62,9 @@ pub fn get_files(pages_dir: &str) -> Vec<MarkdownFile> {
 
     return markdown_files;
 }
+
+
+// TODO: Merge the static folder and the pages folder
 
 pub fn generate_build_dir(build_dir: &str, static_dir: &str) {
     println!("Creating build folder...");
