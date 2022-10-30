@@ -29,6 +29,12 @@ jobs:
     - name: Build
       run: cargo run -- build
       
+    - Prepare Rust
+    - run: rustup toolchain install stable --profile minimal
+    
+    - name: Setup cache
+    - uses: Swatinem/rust-cache@v2
+    
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:
