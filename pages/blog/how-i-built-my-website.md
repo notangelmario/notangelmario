@@ -8,8 +8,6 @@ description: How I made my website using a custom framework built in rust
 # How I built my website
 
 > Published on 30.10.2022
->
-> 2 min read
 
 Hello there! This is my first blog. If you are seeing this, well, good news.
 This sucker actually works.
