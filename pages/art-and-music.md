@@ -1,5 +1,5 @@
 ---
-title: Art & Music
+title: Art & Music &middot; Savin Angel-Mario
 description: The music and art I love and make
 ---
 

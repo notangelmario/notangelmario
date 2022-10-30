@@ -12,7 +12,7 @@ macro_rules! HEAD {
             <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\
             <link rel=\"icon\" href=\"/favicon.png\">\
             <link rel=\"stylesheet\" href=\"/theme.css\">\
-            <title>{} &middot; Savin Angel-Mario</title>\
+            <title>{}</title>\
             <meta name=\"description\" content=\"{}\">\
         </head>"
     };
@@ -26,8 +26,8 @@ pub struct MarkdownFile {
 
 #[derive(Deserialize)]
 struct FrontMatter {
-    pub title: String,
-    pub description: String,
+    pub title: Option<String>,
+    pub description: Option<String>,
 
     pub nav: Option<bool>,
     pub footer: Option<bool>
@@ -99,19 +99,19 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
                 let front_matter: FrontMatter = match parsed.deserialize() {
                     Ok(fm) => fm,
                     Err(_) => FrontMatter {
-                        title: "".to_string(),
-                        description: "".to_string(),
+                        title: Some("".to_string()),
+                        description: Some("".to_string()),
                         nav: Some(true),
                         footer: Some(true)
                     }
                 };
                 
-                if front_matter.title != "" {
-                    title = front_matter.title;
+                if front_matter.title.is_some() {
+                    title = front_matter.title.unwrap();
                 }
 
-                if front_matter.description != "" {
-                    description = front_matter.description;
+                if front_matter.description.is_some() {
+                    description = front_matter.description.unwrap();
                 }
 
                 if front_matter.nav.is_some() {

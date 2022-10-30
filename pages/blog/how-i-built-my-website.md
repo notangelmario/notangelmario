@@ -1,5 +1,5 @@
 ---
-title: How I built my website
+title: How I built my website &middot; Savin Angel-Mario
 description: How I made my website using a custom framework built in rust
 ---
 
