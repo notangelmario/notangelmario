@@ -26,14 +26,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build
-      run: cargo run -- build
-      
+    
     - name: Prepare Rust
       run: rustup toolchain install stable --profile minimal
     
     - name: Setup cache
       uses: Swatinem/rust-cache@v2
+    
+    - name: Build
+      run: cargo run -- build
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
