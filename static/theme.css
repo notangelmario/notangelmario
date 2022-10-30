@@ -7,16 +7,6 @@ body {
 	overflow-x: hidden;
 }
 
-*:not(body) {
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
-}
-
-*:not(body)::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-}
-
-
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -126,6 +116,7 @@ img {
     }
 }
 
+/* Utility classes */
 .no-underline, .no-underline:active, .no-underline:visited {
 	text-decoration: none;
 }
