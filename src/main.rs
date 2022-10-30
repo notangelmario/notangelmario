@@ -1,6 +1,13 @@
 use clap::Parser;
 use std::{path::Path, process};
-use crate::compiler::{get_files, generate_build_dir, generate_markdown_files, generate_footer};
+use crate::compiler::{
+    get_files, 
+    generate_build_dir, 
+    generate_markdown_files, 
+    generate_footer, 
+    generate_nav,
+    MarkdownFile
+};
 
 mod compiler;
 
@@ -15,11 +22,6 @@ struct Args {
     pages_dir: String,
 }
 
-#[derive(Debug)]
-pub struct MarkdownFile {
-    path: String,
-    body: String
-}
 
 fn main() {
     let args = Args::parse();
@@ -35,11 +37,12 @@ fn main() {
     
     println!("Started build step...\n");
 
-    let markdown_files = get_files(pages_dir);
-    let footer = generate_footer(&pages_dir);
+    let markdown_files: Vec<MarkdownFile> = get_files(pages_dir);
+    let footer: String = generate_footer(&pages_dir);
+    let nav: String = generate_nav(&pages_dir);
 
     generate_build_dir(&build_dir, &static_dir);
-    generate_markdown_files(&markdown_files, &build_dir, &footer);
+    generate_markdown_files(&markdown_files, &build_dir, &nav, &footer);
 
     println!("Successfully built {} markdown files", markdown_files.len());
 }

@@ -1,6 +1,5 @@
 use gray_matter::Matter;
 use gray_matter::engine::YAML;
-use crate::MarkdownFile;
 use walkdir::WalkDir;
 use serde::Deserialize;
 use std::{path::Path, io::Result, fs::{self, create_dir_all}};
@@ -17,9 +16,17 @@ macro_rules! HEAD {
     };
 }
 
+
+pub struct MarkdownFile {
+    path: String,
+    body: String
+}
+
 #[derive(Deserialize)]
 struct FrontMatter {
-    title: String,
+    pub title: String,
+    pub nav: Option<bool>,
+    pub footer: Option<bool>
 }
 
 
@@ -65,7 +72,7 @@ pub fn generate_build_dir(build_dir: &str, static_dir: &str) {
         .expect("Couldn't copy static files to build directory!");
 }
 
-pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &str, footer: &str) {
+pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &str, nav: &str, footer: &str) {
     for md_file in markdown_files.iter() {
         let path = Path::new(&md_file.path);
         
@@ -80,13 +87,30 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
         path_split.drain(0..1);
 
         let mut title = path_split.last().unwrap().to_string();
-        
+        let mut nav_enabled = true;
+        let mut footer_enabled = true;
+
         match result.data {
             Some(parsed) => {
-                let front_matter: FrontMatter = parsed.deserialize().unwrap();
+                let front_matter: FrontMatter = match parsed.deserialize() {
+                    Ok(fm) => fm,
+                    Err(_) => FrontMatter {
+                        title: "".to_string(),
+                        nav: Some(true),
+                        footer: Some(true)
+                    }
+                };
                 
                 if front_matter.title != "" {
                     title = front_matter.title;
+                }
+
+                if front_matter.nav.is_some() {
+                    nav_enabled = front_matter.nav.unwrap();
+                }
+
+                if front_matter.footer.is_some() {
+                    footer_enabled = front_matter.footer.unwrap();
                 }
             }
             None => ()
@@ -96,6 +120,10 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
         html.push_str(&format!(HEAD!(), title));
         html.push_str("<body><main>");
 
+        if nav != "" && nav_enabled {
+            html.push_str(nav);
+        }
+
         html.push_str(&markdown_to_html(&result.content, &ComrakOptions {
             render: comrak::ComrakRenderOptions {
                 unsafe_: true,
@@ -104,7 +132,11 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
             ..Default::default()
         }));
         html.push_str("</main>");
-        html.push_str(footer);
+        
+        if footer != "" && footer_enabled {
+            html.push_str(footer);
+        }
+
         html.push_str("</body></html>");
 
         let new_path = 
@@ -127,9 +159,6 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
 pub fn generate_footer(pages_dir: &str) -> String {
     let dir = fs::read_dir(pages_dir).expect("Couldn't read pages directory");
     
-    // Check if the pages directory has a _footer.md file
-    // and if it does, return the contents of the file
-    // as markdown string
     let footer = dir.filter_map(|entry| entry.ok())
         .filter(|entry| entry.file_name().to_str().unwrap() == "_footer.md")
         .map(|entry| fs::read_to_string(entry.path()).unwrap())
@@ -147,6 +176,31 @@ pub fn generate_footer(pages_dir: &str) -> String {
         footer_html.push_str("</footer>");
 
         return footer_html;
+    }
+
+    return String::new();
+}
+
+pub fn generate_nav(pages_dir: &str) -> String {
+   let dir = fs::read_dir(pages_dir).expect("Couldn't read pages directory");
+    
+    let nav = dir.filter_map(|entry| entry.ok())
+        .filter(|entry| entry.file_name().to_str().unwrap() == "_nav.md")
+        .map(|entry| fs::read_to_string(entry.path()).unwrap())
+        .collect::<Vec<String>>();
+
+    if nav.len() > 0 {
+        let mut nav_html = String::from("<nav>");
+        nav_html.push_str(&markdown_to_html(&nav[0], &ComrakOptions {
+            render: comrak::ComrakRenderOptions {
+                unsafe_: true,
+                ..Default::default()
+            },
+            ..Default::default()
+        }));
+        nav_html.push_str("</nav>");
+
+        return nav_html;
     }
 
     return String::new();

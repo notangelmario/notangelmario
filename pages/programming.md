@@ -14,7 +14,7 @@ There is just something that makes me happy
 when I create something.
 
 > Fun fact! The page you are seeing right now was made
-using a [custom framework](https://github.com/notangelmario/notangelmario) built in [Rust](https://rust-lang.org)
+using a [custom framework](https://github.com/notangelmario/notangelmario) built in [Rust](https://rust-lang.org).
 
 ## When it started...
 
@@ -43,7 +43,7 @@ that software can evolve.
 ## My toolchain
 
 I use a Lenovo Chromebook Duet as my primary computer and also
-a computer as a secondary computer. I am always on the go, so
+a desktop PC as a secondary computer. I am always on the go, so
 the chromebook gets to be my primary device.
 
 Here are the things that I use in my programming workflow:
