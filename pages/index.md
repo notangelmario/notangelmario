@@ -22,22 +22,8 @@ I also built some apps like [Marker](https://marker.fructo.land) and [Paquet](ht
 
 ****
 
-# Read more...
+## Read more...
 
-<a href="/programming">
-
-## Programming
-
-</a>
-
-<a href="/student">
-
-## Student
-
-</a>
-
-<a href="/volunteering">
-
-## Volunteering
-
-</a>
+* [Programming](/programming)
+* [Student](/student)
+* [Volunteering](/volunteering)

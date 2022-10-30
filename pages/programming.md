@@ -9,7 +9,7 @@ title: Programming &middot; Savin Angel-Mario
 
 # Programming
 
-Ever since I was little, I was attracted to coding.
+Ever since I was little, I was attracted to programming.
 There is just something that makes me happy
 when I create something.
 
