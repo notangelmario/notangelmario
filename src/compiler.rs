@@ -155,16 +155,20 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
 }
 
 pub fn generate_footer(pages_dir: &str) -> String {
-    let dir = fs::read_dir(pages_dir).expect("Couldn't read pages directory");
-    
-    let footer = dir.filter_map(|entry| entry.ok())
-        .filter(|entry| entry.file_name().to_str().unwrap() == "_footer.md")
-        .map(|entry| fs::read_to_string(entry.path()).unwrap())
-        .collect::<Vec<String>>();
 
-    if footer.len() > 0 {
+    if Path::new(pages_dir).join("_footer.html").exists() {
+        let footer = fs::read_to_string(Path::new(pages_dir).join("_footer.html"))
+            .expect("Couldn't read footer file");
+
+        return footer;
+    } else if Path::new(pages_dir).join("_footer.md").exists() {
+        let footer = fs::read_to_string(Path::new(pages_dir).join("_footer.md"))
+            .expect("Couldn't read footer file");
+    
         let mut footer_html = String::from("<footer>");
-        footer_html.push_str(&markdown_to_html(&footer[0], &ComrakOptions {
+
+    
+        footer_html.push_str(&markdown_to_html(&footer, &ComrakOptions {
             render: comrak::ComrakRenderOptions {
                 unsafe_: true,
                 ..Default::default()

@@ -4,6 +4,7 @@ description: Welcome to my personal website!
 nav: false
 ---
 
+<div>
 <img
 	src="/profile.png"
 	width="128"
@@ -19,6 +20,8 @@ I am the founder and main developer of [Fructo](https://fructo.land).
 I also built some apps like [Marker](https://marker.fructo.land) and [Paquet](https://paquet.shop).
 
 ****
+
+</div>
 
 ## Read more...
 
