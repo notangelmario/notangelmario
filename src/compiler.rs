@@ -24,7 +24,7 @@ pub struct MarkdownFile {
     body: String
 }
 
-#[derive(Deserialize)]
+#[derive(Deserialize, Default)]
 struct FrontMatter {
     pub title: Option<String>,
     pub description: Option<String>,
@@ -92,47 +92,25 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
 
         path_split.drain(0..1);
 
-        let mut title = path_split.last().unwrap().to_string();
-        let mut description = String::new();
-        let mut nav_enabled = true;
-        let mut footer_enabled = true;
-
-        match result.data {
+        let metadata: FrontMatter = match result.data {
             Some(parsed) => {
                 let front_matter: FrontMatter = match parsed.deserialize() {
                     Ok(fm) => fm,
-                    Err(_) => FrontMatter {
-                        title: Some("".to_string()),
-                        description: Some("".to_string()),
-                        nav: Some(true),
-                        footer: Some(true)
-                    }
+                    Err(_) => FrontMatter::default()
                 };
-                
-                if front_matter.title.is_some() {
-                    title = front_matter.title.unwrap();
-                }
-
-                if front_matter.description.is_some() {
-                    description = front_matter.description.unwrap();
-                }
-
-                if front_matter.nav.is_some() {
-                    nav_enabled = front_matter.nav.unwrap();
-                }
-
-                if front_matter.footer.is_some() {
-                    footer_enabled = front_matter.footer.unwrap();
-                }
+            
+                front_matter
             }
-            None => ()
-        }
+            None => FrontMatter::default()
+        };
 
         let mut html = String::from("<html>");
-        html.push_str(&format!(HEAD!(), title, description));
+        html.push_str(&format!(HEAD!(), metadata.title.unwrap_or("Title".to_owned()), metadata.description.unwrap_or("Description".to_owned())));
         html.push_str("<body><main>");
 
-        if nav != "" && nav_enabled {
+        // Unwrap metadata.nav or use default value
+        // from FrontMatter struct
+        if nav != "" && metadata.nav.unwrap_or(true) {
             html.push_str(nav);
         }
 
@@ -153,7 +131,7 @@ pub fn generate_markdown_files(markdown_files: &Vec<MarkdownFile>, build_dir: &s
         }));
         html.push_str("</main>");
         
-        if footer != "" && footer_enabled {
+        if footer != "" && metadata.footer.unwrap_or(true) {
             html.push_str(footer);
         }
 
