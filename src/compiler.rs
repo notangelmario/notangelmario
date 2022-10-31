@@ -27,7 +27,7 @@ pub struct MarkdownFile {
 #[derive(Deserialize)]
 struct FrontMatter {
     pub title: Option<String>,
-    pub description: Option<String>
+    pub description: Option<String>,
 
     pub nav: Option<bool>,
     pub footer: Option<bool>
