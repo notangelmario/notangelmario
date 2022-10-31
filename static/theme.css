@@ -14,10 +14,10 @@ body {
 }
 
 main, footer {
-  font-family: monospace, monospace;
-  max-width: 800px;
-  padding: 2rem;
-  margin: auto;
+	font-family: monospace, monospace;
+	max-width: 800px;
+	padding: 2rem;
+	margin: auto;
 }
 
 footer {
@@ -25,12 +25,12 @@ footer {
 }
 
 ::selection {
-  background: #d3869b;
+	background: #d3869b;
 }
 
 body {
-  background: #282828;
-  color: #ebdbb2;
+	background: #282828;
+	color: #ebdbb2;
 }
 
 hr {
@@ -41,14 +41,14 @@ hr {
 }
 
 pre {
-  background-color: #3c3836;
-  padding: 1em;
-  border: 0;
-  overflow-x: scroll;
+	background-color: #3c3836;
+	padding: 1em;
+	border: 0;
+	overflow-x: scroll;
 }
 
 a, a:active, a:visited {
-  color: #b16286;
+	color: #b16286;
 }
 
 a:has(img) {
@@ -56,7 +56,7 @@ a:has(img) {
 }
 
 h1, h2, h3, h4, h5, p, ul {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 blockquote {
@@ -90,30 +90,30 @@ img {
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        background: #fbf1c7;
-        color: #3c3836;
-    }
+	body {
+		background: #fbf1c7;
+		color: #3c3836;
+	}
 
 	hr {
 		border-top: 1px solid #d5c4a1;
 	}
 
-    pre {
-        background-color: #ebdbb2;
-        padding: 1em;
-        border: 0;
-    }
+	pre {
+		background-color: #ebdbb2;
+		padding: 1em;
+		border: 0;
+	}
 
-    a, a:active, a:visited {
-        color: #b16286;
-    }
+	a, a:active, a:visited {
+		color: #b16286;
+	}
 
-    blockquote {
-        border-left: 1px solid #655c54;
-        margin: 0.5em 10px;
-        padding: 0.5em 10px;
-    }
+	blockquote {
+		border-left: 1px solid #655c54;
+		margin: 0.5em 10px;
+		padding: 0.5em 10px;
+	}
 }
 
 /* Utility classes */
