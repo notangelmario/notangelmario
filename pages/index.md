@@ -1,5 +1,5 @@
 ---
-title: Savin Angel-Mario &middot; Savin Angel-Mario
+title: Savin Angel-Mario
 description: Welcome to my personal website!
 nav: false
 ---
