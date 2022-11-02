@@ -6,7 +6,7 @@ description: My life as a volunteer and how I got into volunteering
 <img
 	width="100%"
 	height="200px"
-	src="/images/volunteer.jpg"
+	src="/static/images/volunteer.jpg"
 />
 
 # Volunteering

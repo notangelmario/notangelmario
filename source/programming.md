@@ -3,7 +3,7 @@ title: Programming &middot; Savin Angel-Mario
 description: How did I get into programming and more...
 ---
 
-![](/images/coding.png)
+![](/static/images/coding.png)
 
 # Programming
 
@@ -44,8 +44,8 @@ I've had quite a few projects. Here are a few:
 
 | 	| 	|
 |:-:|:-:|
-[![Paquet](/projects/paquet.png)](https://paquet.shop)|[![Pingy](/projects/pingy.png)](https://pingy.ro)
-[![Solander](/projects/solander.png)](https://solander.ro)|[![Pingy](/projects/marker.png)](https://marker.fructo.land)
+[![Paquet](/static/projects/paquet.png)](https://paquet.shop)|[![Pingy](/static/projects/pingy.png)](https://pingy.ro)
+[![Solander](/static/projects/solander.png)](https://solander.ro)|[![Pingy](/static/projects/marker.png)](https://marker.fructo.land)
 
 Some other highlights:
 

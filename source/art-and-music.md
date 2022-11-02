@@ -6,7 +6,7 @@ description: The music and art I love and make
 <img
 	width="100%"
 	height="200px"
-	src="/images/draw.jpg"
+	src="/static/images/draw.jpg"
 />
 # Art & Music
 
@@ -31,7 +31,7 @@ art and [surrealism](https://en.wikipedia.org/wiki/Surrealism).
 
 Here are a few of my artworks:
 
-![](/artwork/1.png)
-![](/artwork/2.png)
-![](/artwork/3.png)
-![](/artwork/4.png)
+![](/static/artwork/1.png)
+![](/static/artwork/2.png)
+![](/static/artwork/3.png)
+![](/static/artwork/4.png)

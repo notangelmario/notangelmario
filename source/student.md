@@ -6,7 +6,7 @@ description: My life as a student and the perks I have
 <img
 	width="100%"
 	height="200px"
-	src="/images/faculty.jpg"
+	src="/static/images/faculty.jpg"
 />
 
 # Student

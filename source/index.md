@@ -6,7 +6,7 @@ nav: false
 
 <div>
 <img
-	src="/profile.png"
+	src="/static/profile.png"
 	width="128"
 	height="128"
 	align="left"

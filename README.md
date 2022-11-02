@@ -29,11 +29,3 @@ Those are the tools and languages I know and use:
 * Rust
 * Python
 * C
-
-### About this repo
-
-This repo also hosts [my personal website](https://angelmario.eu). This website 
-was made with a custom markdown framework nicknamed "rumage". If you want, use it. 
-I don't guarantee stability.
-
-Might actually make this framework independent.
