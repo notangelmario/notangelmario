@@ -3,11 +3,8 @@ title: Art & Music &middot; Savin Angel-Mario
 description: The music and art I love and make
 ---
 
-<img
-	width="100%"
-	height="200px"
-	src="/static/images/draw.jpg"
-/>
+![](/static/images/draw.jpg")
+
 # Art & Music
 
 I always loved music and art so I decided to get into

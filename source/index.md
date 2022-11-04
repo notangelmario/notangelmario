@@ -26,6 +26,7 @@ I also built some apps like [Marker](https://marker.fructo.land) and [Paquet](ht
 ## Read more...
 
 ### &middot; [Programming](/programming)
+### &middot; [Acting](/acting)
 ### &middot; [Student](/student)
 ### &middot; [Art & Music](/art-and-music)
 ### &middot; [Volunteering](/volunteering)
