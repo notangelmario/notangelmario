@@ -33,8 +33,11 @@ jobs:
     - name: Setup cache
       uses: Swatinem/rust-cache@v2
     
+    - name: Install Rumage
+      run: cargo install rumage
+
     - name: Build
-      run: cargo run -- build
+      run: rumage build -s source -b build
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
