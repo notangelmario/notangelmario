@@ -33,4 +33,4 @@ I also built some apps like [Marker](https://marker.fructo.land) and [Paquet](ht
 ### &middot; [Blog](/blog)
 
 > BTW: Want a site like mine? Checkout [rumage](https://github.com/notangelmario/rumage), 
-> a tool made by me
+> a tool made by me.
