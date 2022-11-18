@@ -4,7 +4,7 @@
 
 - 🔭 I'm currently working on **myself**
 
-- 🤝 I'm looking for help with [Fructo](https://fructo.land)
+- 🤝 I'm looking for help with [Fructoland](https://fructo.land)
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
