@@ -16,8 +16,7 @@ nav: false
 
 My name is Savin Angel-Mario. 
 I'm a student and a big time tech enthusiast.
-I am the founder and main developer of [Fructo](https://fructo.land).
-I also built some apps like [Marker](https://marker.fructo.land) and [Paquet](https://paquet.shop).
+I built some apps like [Marker](https://marker.angelmario.eu) and [Paquet](https://paquet.shop).
 
 ****
 
