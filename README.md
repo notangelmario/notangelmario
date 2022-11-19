@@ -1,8 +1,6 @@
 # I'm Angel Mario
 
-<img align="right" src="https://github-readme-stats.vercel.app/api?username=notangelmario&show_icons=true&locale=en&theme=gruvbox" alt="notangelmario" />
-
-- 🔭 I'm currently working on **myself**
+- 🔭 I'm currently working on [Paquet](https://paquet.shop), [Marker](https://marker.angelmario.eu) and [rumage](https://github.com/notangelmario/rumage)
 
 - 🤝 I'm looking for help with [Fructoland](https://fructo.land)
 
