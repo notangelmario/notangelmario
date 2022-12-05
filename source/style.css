@@ -55,7 +55,7 @@ a:has(img) {
 	text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, p, ul {
+h1, h2, h3, h4, h5, p, ul, iframe {
 	margin-bottom: 1rem;
 }
 
