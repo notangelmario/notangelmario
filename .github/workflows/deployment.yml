@@ -37,7 +37,7 @@ jobs:
         sudo install ./rumage /usr/bin
 
     - name: Build
-      run: rumage build -s source -b build
+      run: rumage build -s src -b build
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
