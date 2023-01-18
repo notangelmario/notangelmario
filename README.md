@@ -27,3 +27,5 @@ Those are the tools and languages I know and use:
 * Rust
 * Python
 * C
+
+### [Buy me a coffee](https://buymeacoffee.com/notangelmario)
