@@ -50,6 +50,7 @@ I've had quite a few projects. Here are a few:
 Some other highlights:
 
 * [Fructo](https://github.com/fructoland)
+* [Vibrant](https://github.com/notangelmario/vibrant)
 * [markdownc](https://github.com/notangelmario/markdownc)
 * [mdserve](https://deno.land/x/mdserve)
 * [pico-w-morse-code](https://github.com/notangelmario/pico-w-morse-code)
