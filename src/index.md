@@ -16,7 +16,7 @@ nav: false
 
 My name is Savin Angel-Mario. 
 I'm a student, a volunteer and a big time tech enthusiast.
-I built some apps like [Marker](https://marker.angelmario.eu), [Paquet](https://paquet.shop) and [Vibrant](htts://vibrant.angelmario.eu).
+I built some apps like [Marker](https://marker.angelmario.eu), [Paquet](https://paquet.shop) and [Vibrant](https://vibrant.angelmario.eu).
 
 ******
 
