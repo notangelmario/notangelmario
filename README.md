@@ -2,8 +2,6 @@
 
 - 🔭 I'm currently working on [Ciorogarla Unita](https://ciorogarlaunita.eu.org), [Paquet](https://paquet.shop), [Marker](https://marker.angelmario.eu) and [rumage](https://github.com/notangelmario/rumage)
 
-- 🤝 I'm looking for some work.
-
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
 - ❤️ I love collaborating
