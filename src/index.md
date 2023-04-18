@@ -16,19 +16,11 @@ nav: false
 
 My name is Savin Angel-Mario. 
 I'm a student, a volunteer and a big time tech enthusiast.
-I built some apps like [Marker](https://marker.angelmario.eu), [Paquet](https://paquet.shop) and [Vibrant](https://vibrant.angelmario.eu).
+I built some apps like [Ciorogarla Unita](https://ciorogarlaunita.eu.org), [Marker](https://marker.angelmario.eu), [Paquet](https://paquet.shop) and [Vibrant](https://vibrant.angelmario.eu).
 
 ******
 
 </div>
-
-
-## [💼 Young Entrepreneurship](/blog/young-entrepreneurship)
-
-I've recently came back from an ERASMUS+ project about young entrepreneurship.
-[Read more about it.](/blog/young-entrepreneurship)
-
-******
 
 ## Read more...
 
