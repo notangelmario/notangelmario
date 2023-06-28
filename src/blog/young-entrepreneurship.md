@@ -29,7 +29,7 @@ team building.
 
 ## About Paquet, the fictional company
 
-[Paquet](https://paquet.shop), one of my projects, won the contest as the best
+[Paquet](https://paquet.app), one of my projects, won the contest as the best
 company. Paquet was the product and Paquet LLC was the fictional company.
 
 Here are the people that helped me achieve this dream.

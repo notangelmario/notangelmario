@@ -44,7 +44,7 @@ I've had quite a few projects. Here are a few:
 
 | 	| 	|
 |:-:|:-:|
-[![Paquet](/static/projects/paquet.png)](https://paquet.shop)|[![Ciorogarla Unita](/static/projects/ciorogarlaunita.png)](https://ciorogarlaunita.eu.org)
+[![Paquet](/static/projects/paquet.png)](https://paquet.app)|[![Ciorogarla Unita](/static/projects/ciorogarlaunita.png)](https://ciorogarlaunita.eu.org)
 [![Solander](/static/projects/solander.png)](https://solander.ro)|[![Marker](/static/projects/marker.png)](https://marker.angelmario.eu)
 
 Some other highlights:
