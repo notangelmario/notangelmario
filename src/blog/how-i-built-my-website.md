@@ -41,11 +41,11 @@ did what it needed to do - generate HTML from Markdown files
 
 This custom framework supports:
 
-* Custom metadata
-* Custom footer
-* Using a static folder
-* Nesting
-* Using custom input and output directories
+-   Custom metadata
+-   Custom footer
+-   Using a static folder
+-   Nesting
+-   Using custom input and output directories
 
 ## Fin
 
