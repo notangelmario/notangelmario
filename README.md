@@ -10,7 +10,7 @@
 
 # 🧰 Tools & Languages
 
-Those are the tools and languages I know and use:
+Those are the tools and languages I love and use:
 
 ## Tools
 * [Neovim](https://neovim.io/)
