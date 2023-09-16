@@ -16,7 +16,7 @@ nav: false
 
 My name is Savin Angel-Mario. 
 I'm a student, a volunteer and a big time tech enthusiast.
-I built some apps like [Ciorogarla Unita](https://ciorogarlaunita.eu.org), [Marker](https://marker.angelmario.eu), [Paquet](https://paquet.app) and [Vibrant](https://vibrant.angelmario.eu).
+I built some apps like [Roseto](https://roseto.space), [Marker](https://marker.angelmario.eu), [Paquet](https://paquet.app) and [Vibrant](https://vibrant.angelmario.eu).
 
 ******
 
