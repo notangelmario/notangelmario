@@ -3,7 +3,7 @@ title: Volunteering &middot; Savin Angel-Mario
 description: My life as a volunteer and how I got into volunteering
 ---
 
-![](/static/images/volunteer.jpg")
+![](static/images/volunteer.jpg)
 
 # Volunteering
 

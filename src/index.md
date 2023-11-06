@@ -6,7 +6,7 @@ nav: false
 
 <div>
 <img
-	src="/static/profile.png"
+	src="static/profile.png"
 	width="128"
 	height="128"
 	align="left"
@@ -14,9 +14,10 @@ nav: false
 
 # Hi 👋
 
-My name is Savin Angel-Mario. 
-I'm a student, a volunteer and a big time tech enthusiast.
-I built some apps like [Roseto](https://roseto.space), [Marker](https://marker.angelmario.eu), [Paquet](https://paquet.app) and [Vibrant](https://vibrant.angelmario.eu).
+My name is Savin Angel-Mario. I work at Ubisoft, 
+I'm a volunteer and a big time tech enthusiast.
+I built some apps like [Marker](https://github.com/notangelmario/marker), [Paquet](https://paquet.app) and [Vibrant](https://vibrant.angelmario.eu).
+And also I am the founder of [Roseto](https://roseto.space).
 
 ******
 

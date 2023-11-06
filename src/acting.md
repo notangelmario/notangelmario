@@ -1,4 +1,4 @@
-![Acting](/static/images/acting.jpg)
+![Acting](static/images/acting.jpg)
 
 # Acting
 

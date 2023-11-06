@@ -3,7 +3,7 @@ title: Programming &middot; Savin Angel-Mario
 description: How did I get into programming and more...
 ---
 
-![](/static/images/coding.png)
+![](static/images/coding.png)
 
 # Programming
 
@@ -44,13 +44,13 @@ I've had quite a few projects. Here are a few:
 
 | 	| 	|
 |:-:|:-:|
-[![Paquet](/static/projects/paquet.png)](https://paquet.app)|[![Ciorogarla Unita](/static/projects/ciorogarlaunita.png)](https://ciorogarlaunita.eu.org)
-[![Solander](/static/projects/solander.png)](https://solander.ro)|[![Marker](/static/projects/marker.png)](https://marker.angelmario.eu)
+[![Paquet](static/projects/paquet.png)](https://paquet.app)|[![Ciorogarla Unita](static/projects/ciorogarlaunita.png)](https://ciorogarla.eu.org)
+[![Solander](static/projects/solander.png)](https://solander.ro)|[![Marker](static/projects/marker.png)](https://github.com/notangelmario/marker)
 
 Some other highlights:
 
+* [Roseto](https://github.com/roseto)
 * [Fructo](https://github.com/fructoland)
-* [Vibrant](https://github.com/notangelmario/vibrant)
 * [markdownc](https://github.com/notangelmario/markdownc)
 * [mdserve](https://deno.land/x/mdserve)
 * [pico-w-morse-code](https://github.com/notangelmario/pico-w-morse-code)
@@ -58,9 +58,8 @@ Some other highlights:
 
 ## My toolchain
 
-I use a Lenovo Chromebook Duet as my primary computer and also
-a desktop PC as a secondary computer. I am always on the go, so
-the chromebook gets to be my primary device.
+Working at Ubisoft has it's perks so I have 2 computers, one for gaming
+and one for programming.
 
 Here are the things that I use in my programming workflow:
 
@@ -69,7 +68,3 @@ Here are the things that I use in my programming workflow:
 * [Neovim](https://neovim.io)
 * [Marker](https://marker.fructo.land)
 * [markdownc](https://github.com/notangelmario/markdownc)
-
-I heavily use **Markdown** as my "document language". I love making
-documents in Markdown because it's fast. Also easy to convert
-to other formats.
