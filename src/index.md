@@ -23,14 +23,7 @@ And also I am the founder of [Roseto](https://roseto.space).
 
 </div>
 
-## Read more...
-
-### [👨‍💻&middot;Programming](/programming)
-### [🎭&middot;Acting](/acting)
-### [🧑‍🎓&middot;Student](/student)
-### [🎨&middot;Art & Music](/art-and-music)
-### [🙋&middot;Volunteering](/volunteering)
-### [📄&middot;Blog](/blog)
+## [Read more...](/blog)
 
 > BTW: Want a site like mine? Checkout [rumage](https://github.com/notangelmario/rumage), 
 > a tool made by me.
