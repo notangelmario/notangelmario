@@ -17,7 +17,7 @@ nav: false
 My name is Savin Angel-Mario. I work at Ubisoft, 
 I'm a volunteer and a big time tech enthusiast.
 I built some apps like [Marker](https://github.com/notangelmario/marker), [Paquet](https://paquet.app) and [Vibrant](https://vibrant.angelmario.eu).
-And also I am the founder of [Roseto](https://roseto.space).
+And also I am the founder of [Roseto](https://roseto.co).
 
 ******
 
