@@ -1,6 +1,6 @@
 # I'm Angel Mario
 
-- 🔭 I'm currently working on [Roseto](https://roseto.space), [Paquet](https://paquet.app), [Marker](https://github.com/notangelmario/marker) and [rumage](https://github.com/notangelmario/rumage)
+- 🔭 I'm currently working on [Roseto](https://roseto.co), [Paquet](https://paquet.app), [Marker](https://github.com/notangelmario/marker) and [rumage](https://github.com/notangelmario/rumage)
 
 - 👨‍💻 You can see more about me at [angelmario.eu](https://angelmario.eu)
 
