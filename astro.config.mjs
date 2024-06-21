@@ -9,8 +9,10 @@ export default defineConfig({
 	server: {
 		port: 3000
 	},
-	output: "server",
-	adapter: cloudflare(),
+	output: "hybrid",
+	adapter: cloudflare({
+		imageService: "compile"
+	}),
 	integrations: [tailwind({
 		applyBaseStyles: false
 	}), svelte()]
