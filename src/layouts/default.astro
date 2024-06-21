@@ -18,7 +18,7 @@ const { title } = Astro.props?.frontmatter ? Astro.props.frontmatter : Astro.pro
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href={(await getImage({ src: import("@/assets/logo.jpg"), format: "ico", width: 16, height: 16 })).src} />
+		<link rel="icon" href={(await getImage({ src: import("@/assets/logo.jpg"), format: "jpg", width: 16, height: 16 })).src} />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,700,0,0" />
 		<title>{title}</title>
 		<ViewTransitions  />
@@ -27,6 +27,9 @@ const { title } = Astro.props?.frontmatter ? Astro.props.frontmatter : Astro.pro
 		{!Astro.props.noNavbar &&
 			<Navbar />
 		}
+		<div class="bg-[radial-gradient(farthest-side_at_0%,oklch(var(--p)),transparent)] w-full h-full min-w-24 min-h-48 max-w-[40vw] max-h-[80vw] absolute left-0 opacity-75 dark:opacity-50 -z-10 select-none"
+		>
+		</div>
 		<main
 			transition:animate="slide"
 			class={`flex-1 ${Astro.props.frontmatter ? "prose lg:prose-lg dark:prose-invert w-full max-w-screen-lg mx-auto p-8" : ""}`}

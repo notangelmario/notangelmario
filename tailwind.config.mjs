@@ -11,6 +11,7 @@ export default {
 	],
 	daisyui: {
 		themes: ["retro", "coffee"],
-		darkTheme: "coffee"
+		darkTheme: "coffee",
+		logs: false
 	}
 }
