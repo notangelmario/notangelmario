@@ -5,13 +5,13 @@ import Layout from "@/layouts/default.astro";
 
 <Layout title="notangelmario">
 	<Container>
-		<div class="flex flex-row-reverse md:flex-row gap-4">
+		<div class="flex flex-row-reverse lg:flex-row gap-4">
 			<img
 				src="https://github.com/notangelmario.png"
 				class="rounded h-32 w-32"
 			/>
 			<div>
-				<h1 class="text-5xl md:text-7xl font-bold">
+				<h1 class="text-5xl lg:text-7xl font-bold">
 					Savin <br/>Angel-Mario
 				</h1>
 				<p>
@@ -29,25 +29,176 @@ import Layout from "@/layouts/default.astro";
 				I'm now accepting freelance projects. If you have a project
 				you'd like me to work on, please get in touch.
 			</span>
-		</div>
-
-		<div class="card bg-base-200">
-			<div class="card-body">
-				<h2 class="card-title">Roseto</h2>
+			<div>
+				<a class="btn" href="/freelancing">
+					Find out more
+					<span class="material-symbols-rounded">
+						chevron_right
+					</span>
+				</a>
 			</div>
 		</div>
 
-		<div class="card bg-base-200">
-			<div class="card-body">
-				<h2 class="card-title">Paquet</h2>
+		<h2 class="text-5xl font-bold mt-8">
+			Projects
+		</h2>
+
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+			<div class="card bg-base-200 md:col-span-2">
+				<div class="card-body">
+					<img 
+						src="https://roseto.dev/logo.svg"
+						class="w-16 h-16" 
+						alt=""
+					/>
+					<h2 class="card-title">Roseto</h2>
+					<p>
+						Roseto is a business that is focused on privacy, security, freedom, sustainability and development. 
+						We are digitalizing the world, evolving the communities, and growing together.
+					</p>
+					<div class="card-actions">
+						<a class="btn btn-outline" href="https://roseto.dev" target="_blank">
+							Learn more
+							<span class="material-symbols-rounded">open_in_new</span>
+						</a>
+						<a class="btn btn-square btn-outline" href="https://github.com/roseto" target="_blank">
+							<img
+								src="https://cdn.simpleicons.org/github/000000/ffffff"
+								class="w-6 h-6"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card bg-base-200">
+				<div class="card-body">
+					<img 
+						src="https://paquet.app/logo.png"
+						class="w-16 h-16 rounded-full" 
+						alt=""
+					/>
+					<h2 class="card-title">Paquet</h2>
+					<p>
+						Paquet is an app store optimized for web apps. A
+						platform that allows developers to distribute their web
+						apps to users.
+					</p>
+					<div class="card-actions">
+						<a class="btn btn-outline" href="https://paquet.app" target="_blank">
+							Learn more
+							<span class="material-symbols-rounded">open_in_new</span>
+						</a>
+						<a class="btn btn-square btn-outline" href="https://github.com/notangelmario/paquet" target="_blank">
+							<img
+								src="https://cdn.simpleicons.org/github/000000/ffffff"
+								class="w-6 h-6"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card bg-base-200">
+				<div class="card-body">
+					<h2 class="card-title">rumage</h2>
+					<p>
+						A static site generator that is focused on simplicity
+						and speed. Built with Rust, rumage converts markdown
+						files into HTML.
+					</p>
+				</div>
+			</div>
+
+			<div class="card bg-base-200 md:col-span-2">
+				<div class="card-body">
+					<img 
+						src="https://ciorogarla.eu.org/android-chrome-192x192.png"
+						class="w-16 h-16 rounded-full" 
+						alt=""
+					/>
+					<h2 class="card-title">ciorogarla.eu.org</h2>
+					<p>
+						An open-source project that aims to provide a free and open-source website for the village of Ciorogârla, Romania.
+					</p>
+				</div>
+			</div>
+
+
+			<div class="card bg-base-200 md:row-span-2">
+				<div class="card-body">
+					<img 
+						src="https://raw.githubusercontent.com/notangelmario/marker/main/public/android-chrome-192x192.png"
+						class="w-16 h-16 rounded-full" 
+						alt=""
+					/>
+					<h2 class="card-title">Marker</h2>
+					<p>
+						A simple desktop app that allows you to take notes,
+						quickly make changes to code, and save snippets.
+					</p>
+				</div>
+			</div>
+
+			<div class="card bg-base-200 md:col-span-2">
+				<div class="card-body">
+					<h2 class="card-title">gread</h2>
+					<p>
+						A gruvbox themed read mode for your browser. gread
+						removes distractions and makes reading more enjoyable.
+					</p>
+				</div>
+			</div>
+
+			<div class="card bg-base-200">
+				<div class="card-body">
+					<h2 class="card-title">mdserve</h2>
+					<p>
+						A tool built with Deno that allows you to preview
+						markdown files in your browser.
+					</p>
+				</div>
+			</div>
+
+			<div class="card bg-base-200">
+				<div class="card-body">
+					<h2 class="card-title">hardbound</h2>
+					<p>
+						A simple SolidJS framework for building web apps with
+						Deno.
+					</p>
+				</div>
+			</div>
+
+			<div class="card bg-base-200">
+				<div class="card-body">
+					<h2 class="card-title">markdownc</h2>
+					<p>
+						A simple, fast, and easy to use markdown compiler
+						built with C.
+					</p>
+				</div>
+			</div>
+
+			<div class="card bg-base-200 md:col-span-2">
+				<div class="card-body">
+					<h2 class="card-title">Solander</h2>
+					<p>
+						A web app map to find interesting places and 
+						events in your area.
+					</p>
+				</div>
 			</div>
 		</div>
 
-		<div class="bg-[radial-gradient(farthest-side_at_0%,oklch(var(--p)),transparent)] w-[40vw] h-[80vw] absolute left-0 opacity-75 dark:opacity-50 -z-10 select-none"></div>
+
+		<div class="bg-[radial-gradient(farthest-side_at_0%,oklch(var(--p)),transparent)] w-full h-full min-w-24 min-h-48 max-w-[40vw] max-h-[80vw] absolute left-0 opacity-75 dark:opacity-50 -z-10 select-none"></div>
 
 		<h2 class="text-5xl font-bold mt-8">
 			Volunteering
-		</h2 >
+		</h2>
 
 		<div class="card bg-base-200">
 			<div class="card-body">

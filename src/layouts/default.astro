@@ -4,13 +4,16 @@ import "@/styles/global.css";
 interface Props {
 	title: string
 }
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,700,0,200" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,700,0,0" />
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot/>

@@ -12,12 +12,19 @@
 	}
 
 	html, body {
-		@apply h-full;
+		@apply min-h-full;
 	}
 
 	::selection {
 		@apply bg-primary text-primary-content
 	}
+}
+
+body {
+	background-image: 
+		linear-gradient(to right, oklch(var(--p) / .3) 1px, transparent 1px), 
+		linear-gradient(to bottom, oklch(var(--p) / .3) 1px, transparent 1px);
+	background-size: 40px 40px;
 }
 
 body::after {
@@ -36,6 +43,12 @@ body::after {
 }
 
 @media (prefers-color-scheme: dark) {
+	body {
+		background-image: 
+			linear-gradient(to right, oklch(var(--p) / .05) 1px, transparent 1px), 
+			linear-gradient(to bottom, oklch(var(--p) / .05) 1px, transparent 1px);
+	}
+
 	body::after {
 		opacity: 7.5%;
 	}
