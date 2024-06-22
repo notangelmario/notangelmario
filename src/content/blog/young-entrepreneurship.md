@@ -1,13 +1,9 @@
 ---
 title: Young Entrepreneurship
+cover: "@/assets/images/ye-group.jpg"
 description: My experience at a youth exchange about young entrepreneurship
+date: 2022-12-05
 ---
-
-![Young Entrepreneurship](@/assets/images/ye-group.jpg)
-
-# Young Entrepreneurship
-
-> Published on 05.12.2022
 
 I recently went on a youth exchange in Costinesti, Romania. This youth exchange
 was about young entrepreneurship. It helped us manage our emotions, build a

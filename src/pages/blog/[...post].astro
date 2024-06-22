@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/default.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
 	const blogEntries = await getCollection("blog");
@@ -25,5 +26,25 @@ const { Content } = await entry.render();
 	frontmatter={{
 		title: entry.data.title,
 	}}>
+	{entry.data.cover ?
+		<Image
+			src={entry.data.cover}
+			alt=""
+			class="w-full h-32 rounded-box lg:h-64 object-cover object-center"
+		/>
+	: null}
+	<h1 class="text-3xl font-bold mt-4 not-prose">{entry.data.title}</h1>
+	<div class="flex flex-row items-center gap-2 not-prose">
+		<span class="material-symbols-rounded">
+			date_range
+		</span>
+		<span>
+			{entry.data.date.toLocaleDateString("en-US", {
+				year: "numeric",
+				month: "long",
+				day: "numeric",
+			})}
+		</span>
+	</div>
 	<Content/>
 </Layout>

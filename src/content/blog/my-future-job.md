@@ -1,13 +1,9 @@
 ---
 title: My Future Job
+cover: "@/assets/images/mfj-group.jpg"
 description: My experience at a youth exchange about employment
+date: 2023-06-02
 ---
-
-![Group photo](@/assets/images/mfj-group.jpg)
-
-# My Future Job
-
-> Published on 02.06.2023
 
 I am thrilled to share my incredible journey at the Youth Exchange in the mesmerizing coastal town of Costinesti, Romania. From May 4 to May 14, I had the privilege of participating in this life-changing event alongside enthusiastic individuals from Romania, Greece, Spain, Turkey, Italy, and Poland. Our collective goal was to explore the realm of employment and discover the secrets of securing a job.
 

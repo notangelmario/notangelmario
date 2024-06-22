@@ -11,9 +11,20 @@ const blogEntries = await getCollection("blog");
 		<h1 class="text-5xl font-bold">Blog</h1>
 		{blogEntries.map((entry) => (
 			<a href={"/blog/" + entry.slug}>
-				<article class="card bg-base-200 link-hover">
+				<article class="card card-side bg-base-200 link-hover">
+					<aside class="flex flex-col justify-center text-center items-center gap-2 ml-8">
+						<p class="text-5xl font-bold">
+							{entry.data.date.getDay()}
+						</p>
+						<p class="text-xl">
+							{entry.data.date.toLocaleString("default", {
+								month: "short",
+								year: "numeric",
+							})}
+						</p>
+					</aside>
 					<div class="card-body">
-						<h2 class="text-3xl font-bold">
+						<h2 class="card-title">
 							{entry.data.title}<span class="material-symbols-rounded">
 								chevron_right
 							</span>
