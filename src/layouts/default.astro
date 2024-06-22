@@ -24,7 +24,7 @@ const { title } = Astro.props?.frontmatter ? Astro.props.frontmatter : Astro.pro
 		<meta name="theme-color" content="oklch(var(--b1))" />
 		<meta property="og:title" content={title ? `${title} - Savin Angel-Mario` : "Savin Angel-Mario"} />
 		<meta property="og:description" content="Savin Angel-Mario's personal website" />
-		<meta property="og:image" content={(await getImage({ src: import("@/assets/logo.jpg"), format: "jpg", width: 1200, height: 630 })).src} />
+		<meta property="og:image" content={(await getImage({ src: import("@/assets/logo.jpg"), format: "jpg", width: 512, height: 512 })).src} />
 		<meta property="og:url" content="https://notangelmario.dev" />
 		<meta property="og:type" content="website" />
 		<meta property="og:site_name" content="Savin Angel-Mario" />
