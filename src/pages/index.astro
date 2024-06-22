@@ -6,21 +6,21 @@ import { Image } from "astro:assets";
 
 <Layout noNavbar>
 	<Container>
-		<div class="flex flex-row-reverse justify-between md:justify-start md:flex-row gap-4">
-			<Image
-				transition:name="logo"
-				src={import("@/assets/logo.jpg")}
-				alt="Savin Angel-Mario"
-				width={128}
-				height={128}
-				class="rounded h-32 w-32"
-			/>
-			<div>
+		<div>
+			<div class="flex flex-row-reverse justify-between md:justify-start md:flex-row gap-4 mb-2">
+				<Image
+					transition:name="logo"
+					src={import("@/assets/logo.jpg")}
+					alt="Savin Angel-Mario"
+					width={128}
+					height={128}
+					class="rounded-box w-32 h-32"
+				/>
 				<h1 class="text-5xl md:text-7xl font-bold">
 					Savin <br />Angel-Mario
 				</h1>
-				<p>The ever curious, ever learning, ever evolving developer.</p>
 			</div>
+			<p>The ever curious, ever learning, ever evolving developer.</p>
 		</div>
 
 		<div role="alert" class="alert alert-success">
