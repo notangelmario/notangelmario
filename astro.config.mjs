@@ -12,6 +12,7 @@ export default defineConfig({
 	security: {
 		checkOrigin: true
 	},
+	site: "https://notangelmario.dev",
 	output: "hybrid",
 	adapter: cloudflare({
 		imageService: "compile"
