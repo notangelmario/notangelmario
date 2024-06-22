@@ -6,7 +6,7 @@ import { Image } from "astro:assets";
 
 <Layout noNavbar>
 	<Container>
-		<div class="flex flex-row-reverse justify-between lg:justify-start lg:flex-row gap-4">
+		<div class="flex flex-row-reverse justify-between md:justify-start md:flex-row gap-4">
 			<Image
 				transition:name="logo"
 				src={import("@/assets/logo.jpg")}
@@ -16,7 +16,7 @@ import { Image } from "astro:assets";
 				class="rounded h-32 w-32"
 			/>
 			<div>
-				<h1 class="text-5xl lg:text-7xl font-bold">
+				<h1 class="text-5xl md:text-7xl font-bold">
 					Savin <br />Angel-Mario
 				</h1>
 				<p>The ever curious, ever learning, ever evolving developer.</p>
@@ -55,8 +55,8 @@ import { Image } from "astro:assets";
 
 		<h2 class="text-5xl font-bold -mt-8 pt-12" id="projects">Projects</h2>
 
-		<div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
-			<div class="card bg-base-200 lg:col-span-2">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+			<div class="card bg-base-200 md:col-span-2">
 				<div class="card-body">
 					<img
 						src="https://roseto.dev/logo.svg"
@@ -172,7 +172,7 @@ import { Image } from "astro:assets";
 				</div>
 			</div>
 
-			<div class="card bg-base-200 lg:col-span-2">
+			<div class="card bg-base-200 md:col-span-2">
 				<div class="card-body">
 					<img
 						src="https://ciorogarla.eu.org/android-chrome-192x192.png"
@@ -212,7 +212,7 @@ import { Image } from "astro:assets";
 				</div>
 			</div>
 
-			<div class="card bg-base-200 lg:row-span-2">
+			<div class="card bg-base-200 md:row-span-2">
 				<div class="card-body">
 					<img
 						src="https://raw.githubusercontent.com/notangelmario/marker/main/public/android-chrome-192x192.png"
@@ -240,7 +240,7 @@ import { Image } from "astro:assets";
 				</div>
 			</div>
 
-			<div class="card bg-base-200 lg:col-span-2">
+			<div class="card bg-base-200 md:col-span-2">
 				<div class="card-body">
 					<h2 class="card-title">gread</h2>
 					<span class="badge badge-success">COMPLETED</span>
@@ -332,7 +332,7 @@ import { Image } from "astro:assets";
 				</div>
 			</div>
 
-			<div class="card bg-base-200 lg:col-span-2">
+			<div class="card bg-base-200 md:col-span-2">
 				<div class="card-body">
 					<h2 class="card-title">Solander</h2>
 					<span class="badge badge-warning">ARCHIVED</span>
@@ -362,9 +362,9 @@ import { Image } from "astro:assets";
 	</svg>
 	<Container class="bg-primary text-primary-content" noMargin>
 		<div class="max-w-screen-lg mx-auto">
-			<h2 class="text-4xl lg:text-5xl font-bold -mt-8 pt-12" id="volunteering">Volunteering</h2>
+			<h2 class="text-4xl md:text-5xl font-bold -mt-8 pt-12" id="volunteering">Volunteering</h2>
 
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-2 text-base-content">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base-content">
 				<a href="https://roseto.dev/projects/roseto-20240110" target="_blank">
 					<div class="card bg-base-200 link-hover">
 						<figure>
@@ -442,9 +442,9 @@ import { Image } from "astro:assets";
 				</a>
 			</div>
 
-			<h2 class="text-4xl lg:text-5xl font-bold -mt-8 pt-12" id="artwork">Artwork</h2>
+			<h2 class="text-4xl md:text-5xl font-bold -mt-8 pt-12" id="artwork">Artwork</h2>
 
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
 				<Image
 					src={import("@/assets/artwork/1.png")}
 					alt=""
