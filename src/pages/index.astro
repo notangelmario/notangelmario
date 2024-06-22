@@ -4,7 +4,7 @@ import Layout from "@/layouts/default.astro";
 import { Image } from "astro:assets";
 ---
 
-<Layout title="notangelmario" noNavbar>
+<Layout noNavbar>
 	<Container>
 		<div class="flex flex-row-reverse justify-between lg:justify-start lg:flex-row gap-4">
 			<Image
@@ -39,7 +39,21 @@ import { Image } from "astro:assets";
 			</div>
 		</div>
 
-		<h2 class="text-5xl font-bold mt-8">Projects</h2>
+		<div class="card bg-base-200">
+			<div class="card-body">
+				<h2 class="card-title">Blog</h2>
+				<p>I write about my experiences, thoughts, and projects.</p>
+				<div class="card-actions">
+					<a href="/blog" class="btn btn-outline">
+						Read more<span class="material-symbols-rounded">
+							chevron_right
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<h2 class="text-5xl font-bold -mt-8 pt-12" id="projects">Projects</h2>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
 			<div class="card bg-base-200 md:col-span-2">
@@ -341,26 +355,120 @@ import { Image } from "astro:assets";
 				</div>
 			</div>
 		</div>
+	</Container>
 
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" height="100" width="100%">
+		<path fill="oklch(var(--p))" fill-opacity="1" d="M0,160L60,160C120,160,240,160,360,165.3C480,171,600,181,720,170.7C840,160,960,128,1080,112C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+	</svg>
+	<Container class="bg-primary text-primary-content" noMargin>
+		<div class="max-w-screen-lg mx-auto">
+			<h2 class="text-4xl font-bold -mt-8 pt-12" id="volunteering">Volunteering</h2>
 
-		<h2 class="text-5xl font-bold mt-8">Volunteering</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-2 text-base-content">
+				<a href="https://roseto.dev/projects/roseto-20240110" target="_blank">
+					<div class="card bg-base-200 link-hover">
+						<figure>
+							<img
+								src="https://raw.githubusercontent.com/roseto/roseto/main/src/content/projects/images/roseto-20240110/1.webp"
+								alt="Learning about Volunteering"
+								class="w-full max-h-48 object-cover"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">
+								Learning about Volunteering<span class="material-symbols-rounded">
+									open_in_new
+								</span>
+							</h2>
+						</div>
+					</div>
+				</a>
 
-		<div class="card bg-base-200">
-			<div class="card-body">
-				<h2 class="card-title">Paquet</h2>
+				<a href="https://roseto.dev/projects/roseto-20231007" target="_blank">
+					<div class="card bg-base-200 link-hover">
+						<figure>
+							<img
+								src="https://raw.githubusercontent.com/roseto/roseto/main/src/content/projects/images/7-oct-2023/5.webp"
+								alt="Roseto Training Activity"
+								class="w-full max-h-48 object-cover"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">
+								Roseto Training Activity<span class="material-symbols-rounded">
+									open_in_new
+								</span>
+							</h2>
+						</div>
+					</div>
+				</a>
+
+				<a href="/blog/my-future-job">
+					<div class="card bg-base-200 link-hover">
+						<figure>
+							<Image
+								src={import("@/assets/images/mfj-group.jpg")}
+								alt="MFJ Group"
+								class="w-full max-h-48 object-cover"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">
+								My Future Job<span class="material-symbols-rounded">
+									chevron_right
+								</span>
+							</h2>
+						</div>
+					</div>
+				</a>
+
+				<a href="/blog/young-entrepreneurship">
+					<div class="card bg-base-200 link-hover">
+						<figure>
+							<Image
+								src={import("@/assets/images/ye-group.jpg")}
+								alt="YE Group"
+								class="w-full max-h-48 object-cover"
+							/>
+						</figure>
+						<div class="card-body">
+							<h2 class="card-title">
+								Young Entrepreneurship<span class="material-symbols-rounded">
+									chevron_right
+								</span>
+							</h2>
+						</div>
+					</div>
+				</a>
 			</div>
-		</div>
 
-		<div class="card bg-base-200">
-			<div class="card-body">
-				<h2 class="card-title">Paquet</h2>
-			</div>
-		</div>
+			<h2 class="text-4xl font-bold -mt-8 pt-12" id="artwork">Artwork</h2>
 
-		<div class="card bg-base-200">
-			<div class="card-body">
-				<h2 class="card-title">Paquet</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+				<Image
+					src={import("@/assets/artwork/1.png")}
+					alt=""
+					class="rounded-box z-50"
+				/>
+				<Image
+					src={import("@/assets/artwork/2.png")}
+					alt=""
+					class="rounded-box z-50"
+				/>
+				<Image
+					src={import("@/assets/artwork/3.png")}
+					alt=""
+					class="rounded-box z-50"
+				/>
+				<Image
+					src={import("@/assets/artwork/4.png")}
+					alt=""
+					class="rounded-box z-50"
+				/>
 			</div>
 		</div>
 	</Container>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none" height="100" width="100%">
+		<path fill="oklch(var(--p))" fill-opacity="1" d="M0,160L60,160C120,160,240,160,360,165.3C480,171,600,181,720,170.7C840,160,960,128,1080,112C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+	</svg>
 </Layout>

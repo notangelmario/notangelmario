@@ -1,6 +1,38 @@
 ---
 import Container from "./container.astro";
 
+const links = [
+	{
+		name: "Instagram",
+		icon: "instagram",
+		url: "https://instagram.com/notangelmario",
+	},
+	{
+		name: "Facebook",
+		icon: "facebook",
+		url: "https://facebook.com/notangelmario",
+	},
+	{
+		name: "GitHub",
+		icon: "github",
+		url: "https://github.com/notangelmario",
+	},
+	{
+		name: "Open Collective",
+		icon: "opencollective",
+		url: "https://opencollective.com/notangelmario",
+	},
+	{
+		name: "LinkedIn",
+		icon: "linkedin",
+		url: "https://linkedin.com/in/notangelmario",
+	},
+	{
+		name: "Steam",
+		icon: "steam",
+		url: "https://steamcommunity.com/id/notangelmario",
+	},
+]
 ---
 
 <footer class="py-8 bg-base-300 rounded-t-3xl">
@@ -11,5 +43,21 @@ import Container from "./container.astro";
 		<a href="mailto:hello@notangemario.dev" target="_blank" class="link text-center">
 			hello@notangelmario.dev
 		</a>
+		<div class="flex flex-row justify-center items-center">
+			{links.map((link) => (
+				<a
+					href={link.url}
+					target="_blank"
+					class="btn btn-square btn-link"
+				>
+					<img
+						src={`https://cdn.simpleicons.org/${link.icon}/000000/ffffff`}
+						alt={link.name}
+						width="24"
+						height="24"
+					/>
+				</a>
+			))}
+		</div>
 	</Container>
 </footer>

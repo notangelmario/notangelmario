@@ -9,6 +9,9 @@ export default defineConfig({
 	server: {
 		port: 3000
 	},
+	security: {
+		checkOrigin: true
+	},
 	output: "hybrid",
 	adapter: cloudflare({
 		imageService: "compile"

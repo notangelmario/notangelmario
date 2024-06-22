@@ -6,7 +6,7 @@ import { getImage } from "astro:assets";
 import { ViewTransitions } from "astro:transitions";
 
 interface Props {
-	title: string;
+	title?: string;
 	noNavbar?: boolean;
 	frontmatter?: Omit<Props, "frontmatter">
 }
@@ -20,14 +20,18 @@ const { title } = Astro.props?.frontmatter ? Astro.props.frontmatter : Astro.pro
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href={(await getImage({ src: import("@/assets/logo.jpg"), format: "jpg", width: 16, height: 16 })).src} />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,700,0,0" />
-		<title>{title}</title>
+		<title>{title ? `${title} - Savin Angel-Mario` : "Savin Angel-Mario"}</title>
+		<meta name="theme-color" content="oklch(var(--b1))" />
 		<ViewTransitions  />
 	</head>
-	<body class="flex flex-col min-h-svh">
+	<body class="flex flex-col min-h-svh overflow-x-hidden">
 		{!Astro.props.noNavbar &&
 			<Navbar />
 		}
-		<div class="bg-[radial-gradient(farthest-side_at_0%,oklch(var(--p)),transparent)] w-full h-full min-w-24 min-h-48 max-w-[40vw] max-h-[80vw] absolute left-0 opacity-75 dark:opacity-50 -z-10 select-none"
+		<div class="bg-[radial-gradient(farthest-side_at_0%,oklch(var(--p)),transparent)] w-full h-full min-w-24 min-h-48 aspect-square max-h-[120vh] max-w-[40vw] absolute left-0 opacity-75 dark:opacity-25 -z-10 select-none"
+		>
+		</div>
+		<div class="bg-[radial-gradient(farthest-side_at_100%,oklch(var(--p)),transparent)] w-full h-full min-w-24 min-h-48 max-h-[calc(300vh-20vh)] max-w-[calc(100vh-20vh)] absolute top-[20vh] right-0 opacity-75 dark:opacity-25 -z-10 select-none"
 		>
 		</div>
 		<main

@@ -5,7 +5,7 @@ title: Freelancing
 
 # Freelancing projects
 
-<div role="alert" class="alert alert-success">
+<div role="alert" class="alert alert-success not-prose">
 	<span class="material-symbols-rounded"> rocket_launch </span>
 	<span>
 		I'm now accepting freelancing projects. If you have a project
@@ -68,15 +68,23 @@ I usually charge 50% upfront and 50% after the project is finished, but I am ope
 
 Previous clients have been satisfied with my work, and found it to be cost-effective and reliable.
 
+<div class="card card-body bg-base-200 prose-ul:my-0">
+
+<h2 class="card-title not-prose">Contact me</h2>
+
+If you are interested in hiring me for a project, please contact me at [hello@notangelmario.dev](mailto:hello@notangelmario.dev) with the following information:
+
+- A brief description of the project;
+- The technologies you would like me to use;
+- The estimated time to complete the project;
+- Your budget for the project;
+- Any other information you think is relevant to the project.
+
+I will get back to you as soon as possible with a quote for the project.
+
+</div>
+
 ## Questions?
-
-***
-
-> What is the best way to contact you?
-
-You can contact me via email at [hello@notangelmario.dev](mailto:hello@notangelmario.dev)
-
-***
 
 > What is your availability?
 

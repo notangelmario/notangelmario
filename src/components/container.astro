@@ -1,17 +1,19 @@
 ---
 interface Props {
-	noPadding?: boolean;
+	noMargin?: boolean;
 	noSpaceBetween?: boolean;
+	class?: string;
 }
 
-const { noPadding, noSpaceBetween } = Astro.props;
+const { noMargin, noSpaceBetween, class: className } = Astro.props;
 ---
 
 <div
 	class={`
-		flex flex-col
-		${noPadding ? "" : "max-w-screen-lg mx-auto p-8"}
+		flex flex-col p-8
+		${noMargin ? "" : "max-w-screen-lg mx-auto"}
 		${noSpaceBetween ? "" : "gap-4"}
+		${className || ""}
 	`}
 >
 	<slot/>

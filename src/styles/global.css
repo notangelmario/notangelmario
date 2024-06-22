@@ -40,6 +40,7 @@ body::after {
 	mix-blend-mode: screen;
 	user-select: none;
 	pointer-events: none;
+	z-index: 40;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,6 +51,6 @@ body::after {
 	}
 
 	body::after {
-		opacity: 10%;
+		opacity: 15%;
 	}
 }

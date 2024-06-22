@@ -1,0 +1,27 @@
+---
+import Layout from "@/layouts/default.astro";
+import Container from "@/components/container.astro";
+import { getCollection } from "astro:content";
+
+const blogEntries = await getCollection("blog");
+---
+
+<Layout title="Blog">
+	<Container>
+		<h1 class="text-5xl font-bold">Blog</h1>
+		{blogEntries.map((entry) => (
+			<a href={"/blog/" + entry.slug}>
+				<article class="card bg-base-200 link-hover">
+					<div class="card-body">
+						<h2 class="text-3xl font-bold">
+							{entry.data.title}<span class="material-symbols-rounded">
+								chevron_right
+							</span>
+						</h2>
+						<p>{entry.data.description}</p>
+					</div>
+				</article>
+			</a>
+		))}
+	</Container>
+</Layout>

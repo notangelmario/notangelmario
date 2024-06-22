@@ -1,17 +1,25 @@
 ---
 import { Image } from "astro:assets";
+import { fade } from "astro:transitions";
 ---
 
+
 <nav
-	class="flex flex-row items-center justify-between p-4 max-w-screen-lg mx-auto w-full"
+	class="relative flex flex-row items-center p-4 max-w-screen-lg mx-auto w-full"
 >
-	<a href="/" transition:name="logo">
+	<a href="/" transition:name="logo" class="mr-4">
 		<Image
 			src={import("@/assets/logo.jpg")}
 			width={32}
 			height={32}
 			alt=""
-			class="w-8 h-8 rounded"
+			class="w-8 h-8 rounded shadow-[0_0px_60px_64px_oklch(var(--p)/0.25)]"
 		>
+	</a>
+	<a href="/#projects" class="btn btn-link">
+		Projects
+	</a>
+	<a href="/blog" class="btn btn-link">
+		Blog
 	</a>
 </nav>
