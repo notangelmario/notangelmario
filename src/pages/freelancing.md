@@ -15,27 +15,28 @@ title: Freelancing
 
 With over half a decade of experience in the industry, I have worked on a variety of projects, ranging from small websites to large-scale applications.
 
-I have experience with the following technologies:
-* **Languages**: HTML, CSS, JavaScript, TypeScript, Rust, C, Markdown, SQL, Dart;
-* **Frameworks**: React, Svelte, SolidJS, Fresh, Astro, NextJS, SvelteKit, Expo/React Native, Tauri (even some of my own such as [rumage](https://github.com/notangelmario/rumage) and [hardbound](https://github.com/notangelmario/hardbound))
-* **Backend**: NodeJS, Deno, Rust, Cloudflare Workers, Firebase Cloud Functions, Vercel Serverless Functions, Netlify Functions, Lambda Functions;
+I have experience with the following technologies (in order which ones I know best):
+* **Languages**: JavaScript, TypeScript, HTML, CSS, Markdown, Gleam, Rust, C, SQL, Dart;
+* **Frameworks**: Astro, React, Svelte, SvelteKit, Fresh, NextJS, SolidJS, Expo/React Native, Tauri (even some of my own such as [rumage](https://github.com/notangelmario/rumage) and [hardbound](https://github.com/notangelmario/hardbound))
+* **Backend**: NodeJS, Deno, Cloudflare Workers, Vercel Serverless Functions, Rust, Firebase Cloud Functions, Netlify Functions, Lambda Functions;
 * **Databases**: PostgreSQL, SQLite, libSQL, Firebase Firestore, Firebase Realtime Database;
-* **Deployment**: Docker, Vercel, Netlify, Cloudflare Workers, Firebase Hosting;
+* **Deployment**: Cloudflare Workers, Vercel, Netlify, Firebase Hosting, Docker;
 * **CI/CD**: GitHub Actions;
 * **Version Control**: Git;
 * **Version Control Hosting**: GitHub, GitLab;
 
 ## What can I build?
 
-You can hire me to build:
+You can hire me to build (in order which ones I know best):
 * Websites;
-* Web applications;
-* Mobile applications;
-* Desktop applications;
+* SPA web apps;
+* SSR web apps;
 * APIs;
 * Libraries;
-* CLI tools;
 * Custom tools;
+* Mobile applications;
+* Desktop applications;
+* CLI tools;
 
 ## What do you get?
 
