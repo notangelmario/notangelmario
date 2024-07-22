@@ -19,7 +19,6 @@ const { title } = Astro.props?.frontmatter ? Astro.props.frontmatter : Astro.pro
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href={(await getImage({ src: import("@/assets/logo.jpg"), format: "jpg", width: 16, height: 16 })).src} />
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,700,0,0" />
 		<title>{title ? `${title} - Savin Angel-Mario` : "Savin Angel-Mario"}</title>
 		<meta name="theme-color" content="oklch(var(--b1))" />
 		<meta property="og:title" content={title ? `${title} - Savin Angel-Mario` : "Savin Angel-Mario"} />

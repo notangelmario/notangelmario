@@ -2,6 +2,7 @@
 import Layout from "@/layouts/default.astro";
 import Container from "@/components/container.astro";
 import { getCollection } from "astro:content";
+import { IconChevronRight } from "@tabler/icons-svelte";
 
 const blogEntries = await getCollection("blog");
 ---
@@ -25,9 +26,8 @@ const blogEntries = await getCollection("blog");
 					</aside>
 					<div class="card-body">
 						<h2 class="card-title">
-							{entry.data.title}<span class="material-symbols-rounded">
-								chevron_right
-							</span>
+							{entry.data.title}
+							<IconChevronRight/>
 						</h2>
 						<p>{entry.data.description}</p>
 					</div>

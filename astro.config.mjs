@@ -13,10 +13,10 @@ export default defineConfig({
 		checkOrigin: true
 	},
 	site: "https://notangelmario.dev",
-	output: "hybrid",
-	adapter: cloudflare({
-		imageService: "compile"
-	}),
+	output: "static",
+	// adapter: cloudflare({
+	// 	imageService: "compile"
+	// }),
 	integrations: [tailwind({
 		applyBaseStyles: false
 	}), svelte()]

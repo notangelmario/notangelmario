@@ -2,6 +2,7 @@
 import Container from "@/components/container.astro";
 import Layout from "@/layouts/default.astro";
 import { Image } from "astro:assets";
+import { IconRocket, IconChevronRight, IconExternalLink } from "@tabler/icons-svelte";
 ---
 
 <Layout noNavbar>
@@ -26,7 +27,7 @@ import { Image } from "astro:assets";
 		</div>
 
 		<div role="alert" class="alert alert-success">
-			<span class="material-symbols-rounded"> rocket_launch </span>
+			<IconRocket/>
 			<span>
 				I'm now accepting freelancing projects. If you have a project
 				you'd like me to work on, please get in touch.
@@ -34,9 +35,7 @@ import { Image } from "astro:assets";
 			<div>
 				<a class="btn" href="/freelancing">
 					Find out more
-					<span class="material-symbols-rounded">
-						chevron_right
-					</span>
+					<IconChevronRight/>
 				</a>
 			</div>
 		</div>
@@ -47,9 +46,8 @@ import { Image } from "astro:assets";
 				<p>I write about my experiences, thoughts, and projects.</p>
 				<div class="card-actions">
 					<a href="/blog" class="btn btn-outline">
-						Read more<span class="material-symbols-rounded">
-							chevron_right
-						</span>
+						Read more
+						<IconChevronRight/>
 					</a>
 				</div>
 			</div>
@@ -60,8 +58,10 @@ import { Image } from "astro:assets";
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
 			<div class="card bg-base-200 md:col-span-2">
 				<div class="card-body">
-					<img
+					<Image
 						src="https://roseto.dev/logo.svg"
+						loading="lazy"
+						inferSize
 						class="w-16 h-16"
 						alt=""
 					/>
@@ -80,9 +80,7 @@ import { Image } from "astro:assets";
 							target="_blank"
 						>
 							Check out
-							<span class="material-symbols-rounded"
-								>open_in_new</span
-							>
+							<IconExternalLink/>
 						</a>
 						<a
 							class="btn btn-square btn-outline"
@@ -112,8 +110,10 @@ import { Image } from "astro:assets";
 
 			<div class="card bg-base-200">
 				<div class="card-body">
-					<img
+					<Image
 						src="https://paquet.app/logo.png"
+						loading="lazy"
+						inferSize
 						class="w-16 h-16 rounded-full"
 						alt=""
 					/>
@@ -131,9 +131,7 @@ import { Image } from "astro:assets";
 							target="_blank"
 						>
 							Check out
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 						<a
 							class="btn btn-square btn-outline"
@@ -166,9 +164,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Learn More
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 					</div>
 				</div>
@@ -176,8 +172,10 @@ import { Image } from "astro:assets";
 
 			<div class="card bg-base-200 md:col-span-2">
 				<div class="card-body">
-					<img
+					<Image
 						src="https://raw.githubusercontent.com/roseto/ciorogarla.eu.org/main/src/assets/logo.png"
+						inferSize
+						loading="lazy"
 						class="w-16 h-16 rounded-full"
 						alt=""
 					/>
@@ -195,9 +193,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Check out
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 						<a
 							class="btn btn-square btn-outline"
@@ -234,9 +230,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Learn More
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 					</div>
 				</div>
@@ -257,9 +251,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Check out
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 						<a
 							class="btn btn-square btn-outline"
@@ -288,9 +280,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Learn More
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 					</div>
 				</div>
@@ -311,9 +301,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Learn More
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 					</div>
 				</div>
@@ -334,9 +322,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Learn More
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 					</div>
 				</div>
@@ -357,9 +343,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Learn More
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 					</div>
 				</div>
@@ -380,9 +364,7 @@ import { Image } from "astro:assets";
 							class="btn btn-outline"
 						>
 							Learn More
-							<span class="material-symbols-rounded">
-								open_in_new
-							</span>
+							<IconExternalLink/>
 						</a>
 					</div>
 				</div>
@@ -421,7 +403,9 @@ import { Image } from "astro:assets";
 				>
 					<div class="card bg-base-200 link-hover">
 						<figure>
-							<img
+							<Image
+								inferSize
+								loading="lazy"
 								src="https://raw.githubusercontent.com/roseto/roseto/main/src/content/projects/images/roseto-20240110/1.webp"
 								alt="Learning about Volunteering"
 								class="w-full max-h-48 object-cover"
@@ -429,11 +413,8 @@ import { Image } from "astro:assets";
 						</figure>
 						<div class="card-body">
 							<h2 class="card-title">
-								Learning about Volunteering<span
-									class="material-symbols-rounded"
-								>
-									open_in_new
-								</span>
+								Learning about Volunteering
+								<IconChevronRight/>
 							</h2>
 						</div>
 					</div>
@@ -445,7 +426,9 @@ import { Image } from "astro:assets";
 				>
 					<div class="card bg-base-200 link-hover">
 						<figure>
-							<img
+							<Image
+								loading="lazy"
+								inferSize
 								src="https://raw.githubusercontent.com/roseto/roseto/main/src/content/projects/images/7-oct-2023/5.webp"
 								alt="Roseto Training Activity"
 								class="w-full max-h-48 object-cover"
@@ -453,11 +436,8 @@ import { Image } from "astro:assets";
 						</figure>
 						<div class="card-body">
 							<h2 class="card-title">
-								Roseto Training Activity<span
-									class="material-symbols-rounded"
-								>
-									open_in_new
-								</span>
+								Roseto Training Activity
+								<IconChevronRight/>
 							</h2>
 						</div>
 					</div>
@@ -468,17 +448,15 @@ import { Image } from "astro:assets";
 						<figure>
 							<Image
 								src={import("@/assets/images/mfj-group.jpg")}
+								loading="lazy"
 								alt="MFJ Group"
 								class="w-full max-h-48 object-cover"
 							/>
 						</figure>
 						<div class="card-body">
 							<h2 class="card-title">
-								My Future Job<span
-									class="material-symbols-rounded"
-								>
-									chevron_right
-								</span>
+								My Future Job
+								<IconChevronRight/>
 							</h2>
 						</div>
 					</div>
@@ -489,17 +467,15 @@ import { Image } from "astro:assets";
 						<figure>
 							<Image
 								src={import("@/assets/images/ye-group.jpg")}
+								loading="lazy"
 								alt="YE Group"
 								class="w-full max-h-48 object-cover"
 							/>
 						</figure>
 						<div class="card-body">
 							<h2 class="card-title">
-								Young Entrepreneurship<span
-									class="material-symbols-rounded"
-								>
-									chevron_right
-								</span>
+								Young Entrepreneurship
+								<IconChevronRight/>
 							</h2>
 						</div>
 					</div>
@@ -513,21 +489,25 @@ import { Image } from "astro:assets";
 			<div class="grid grid-cols-1 md:grid-cols-2 gap-2">
 				<Image
 					src={import("@/assets/artwork/1.png")}
+					loading="lazy"
 					alt=""
 					class="rounded-box z-50"
 				/>
 				<Image
 					src={import("@/assets/artwork/2.png")}
+					loading="lazy"
 					alt=""
 					class="rounded-box z-50"
 				/>
 				<Image
 					src={import("@/assets/artwork/3.png")}
+					loading="lazy"
 					alt=""
 					class="rounded-box z-50"
 				/>
 				<Image
 					src={import("@/assets/artwork/4.png")}
+					loading="lazy"
 					alt=""
 					class="rounded-box z-50"
 				/>
