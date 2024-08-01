@@ -6,7 +6,6 @@ title: Freelancing
 # Freelancing projects
 
 <div role="alert" class="alert alert-success not-prose">
-	<span class="material-symbols-rounded"> rocket_launch </span>
 	<span>
 		I'm now accepting freelancing projects. If you have a project
 		you'd like me to work on, please get in touch.
