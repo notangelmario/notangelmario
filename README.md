@@ -10,11 +10,15 @@
 Those are the tools and languages I love and use:
 
 ## Tools
-* [Neovim](https://neovim.io/)
+* [VS Code](https://code.visualstudio.com/)
 * [zsh](https://www.zsh.org/)
 * [Alacritty](https://alacritty.org/)
 * [Marker](https://github.com/notangelmario/marker)
 * [markdownc](https://github.com/notangelmario/markdownc)
+
+## Workstations
+* MacBook Air M1
+* Windows-powered Intel I3 + Nvidia GeForce 1650 GTX
 
 ## Languages
 * TypeScript
