@@ -2,7 +2,7 @@
 import Container from "@/components/container.astro";
 import Layout from "@/layouts/default.astro";
 import { Image } from "astro:assets";
-import { IconRocket, IconChevronRight, IconExternalLink } from "@tabler/icons-svelte";
+import { IconChevronRight, IconExternalLink } from "@tabler/icons-svelte";
 ---
 
 <Layout noNavbar>
@@ -26,7 +26,7 @@ import { IconRocket, IconChevronRight, IconExternalLink } from "@tabler/icons-sv
 			<p>The ever curious, ever learning, ever evolving developer.</p>
 		</div>
 
-		<div role="alert" class="alert alert-success">
+		<!-- <div role="alert" class="alert alert-success">
 			<IconRocket/>
 			<span>
 				I'm now accepting freelancing projects. If you have a project
@@ -38,7 +38,7 @@ import { IconRocket, IconChevronRight, IconExternalLink } from "@tabler/icons-sv
 					<IconChevronRight/>
 				</a>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="card bg-base-200">
 			<div class="card-body">
@@ -56,6 +56,35 @@ import { IconRocket, IconChevronRight, IconExternalLink } from "@tabler/icons-sv
 		<h2 class="text-5xl font-bold -mt-8 pt-12" id="projects">Projects</h2>
 
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+			<div class="card bg-base-200 md:col-span-3">
+				<div class="card-body">
+					<Image
+						src="https://mauv.page/logo.svg"
+						loading="lazy"
+						inferSize
+						class="w-16 h-16"
+						alt=""
+					/>
+					<h2 class="card-title">Mauv</h2>
+					<span class="badge badge-success">MAINTAINED</span>
+					<p>
+						Mauv is a platform that allows you to create websites
+						with ease. It is a simple, fast and efficient way to
+						build websites.
+					</p>
+					<div class="card-actions">
+						<a
+							class="btn btn-outline"
+							href="https://mauv.page"
+							target="_blank"
+						>
+							Check out
+							<IconExternalLink/>
+						</a>
+					</div>
+				</div>
+			</div>
+
 			<div class="card bg-base-200 md:col-span-2">
 				<div class="card-body">
 					<Image
