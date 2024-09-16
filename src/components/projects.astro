@@ -1,0 +1,350 @@
+---
+import { Image } from "astro:assets"
+import { IconExternalLink } from "@tabler/icons-svelte";
+---
+
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+	<div class="card bg-base-200 md:col-span-3">
+		<div class="card-body">
+			<Image
+				src="https://mauv.page/logo.svg"
+				loading="lazy"
+				inferSize
+				class="w-16 h-16"
+				alt=""
+			/>
+			<h2 class="card-title">Mauv</h2>
+			<span class="badge badge-success">MAINTAINED</span>
+			<p>
+				Mauv is a platform that allows you to create websites
+				with ease. It is a simple, fast and efficient way to
+				build websites.
+			</p>
+			<div class="card-actions">
+				<a
+					class="btn btn-outline"
+					href="https://mauv.page"
+					target="_blank"
+				>
+					Check out
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200 md:col-span-2">
+		<div class="card-body">
+			<Image
+				src="https://roseto.dev/logo.svg"
+				loading="lazy"
+				inferSize
+				class="w-16 h-16"
+				alt=""
+			/>
+			<h2 class="card-title">Roseto</h2>
+			<span class="badge badge-success">MAINTAINED</span>
+			<p>
+				Roseto is a business that is focused on privacy,
+				security, freedom, sustainability and development. We
+				are digitalizing the world, evolving the communities,
+				and growing together.
+			</p>
+			<div class="card-actions">
+				<a
+					class="btn btn-outline"
+					href="https://roseto.dev"
+					target="_blank"
+				>
+					Check out
+					<IconExternalLink/>
+				</a>
+				<a
+					class="btn btn-square btn-outline"
+					href="https://opencollective.com/roseto"
+					target="_blank"
+				>
+					<img
+						src="https://cdn.simpleicons.org/opencollective/000000/ffffff"
+						class="w-6 h-6"
+						alt=""
+					/>
+				</a>
+				<a
+					class="btn btn-square btn-outline"
+					href="https://github.com/roseto"
+					target="_blank"
+				>
+					<img
+						src="https://cdn.simpleicons.org/github/000000/ffffff"
+						class="w-6 h-6"
+						alt=""
+					/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200">
+		<div class="card-body">
+			<Image
+				src="https://paquet.app/logo.png"
+				loading="lazy"
+				inferSize
+				class="w-16 h-16 rounded-full"
+				alt=""
+			/>
+			<h2 class="card-title">Paquet</h2>
+			<span class="badge badge-success">MAINTAINED</span>
+			<p>
+				Paquet is an app store optimized for web apps. A
+				platform that allows developers to distribute their web
+				apps to users.
+			</p>
+			<div class="card-actions">
+				<a
+					class="btn btn-outline"
+					href="https://paquet.app"
+					target="_blank"
+				>
+					Check out
+					<IconExternalLink/>
+				</a>
+				<a
+					class="btn btn-square btn-outline"
+					href="https://github.com/notangelmario/paquet"
+					target="_blank"
+				>
+					<img
+						src="https://cdn.simpleicons.org/github/000000/ffffff"
+						class="w-6 h-6"
+						alt=""
+					/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200">
+		<div class="card-body">
+			<h2 class="card-title">rumage</h2>
+			<span class="badge badge-success">MAINTAINED</span>
+			<p>
+				A static site generator that is focused on simplicity
+				and speed. Built with Rust, rumage converts markdown
+				files into HTML.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://github.com/notangelmario/rumage"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Learn More
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200 md:col-span-2">
+		<div class="card-body">
+			<Image
+				src="https://raw.githubusercontent.com/roseto/ciorogarla.eu.org/main/src/assets/logo.png"
+				inferSize
+				loading="lazy"
+				class="w-16 h-16 rounded-full"
+				alt=""
+			/>
+			<h2 class="card-title">ciorogarla.eu.org</h2>
+			<span class="badge badge-success">MAINTAINED</span>
+			<p>
+				An open-source project that aims to provide a free and
+				open-source website for the village of Ciorogârla,
+				Romania.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://ciorogarla.eu.org"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Check out
+					<IconExternalLink/>
+				</a>
+				<a
+					class="btn btn-square btn-outline"
+					href="https://github.com/notangelmario/ciorogarla.eu.org"
+					target="_blank"
+				>
+					<img
+						src="https://cdn.simpleicons.org/github/000000/ffffff"
+						class="w-6 h-6"
+						alt=""
+					/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200 md:row-span-2">
+		<div class="card-body">
+			<img
+				src="https://raw.githubusercontent.com/notangelmario/marker/main/public/android-chrome-192x192.png"
+				class="w-16 h-16 rounded-full"
+				alt=""
+			/>
+			<h2 class="card-title">Marker</h2>
+			<span class="badge badge-success">COMPLETED</span>
+			<p>
+				A simple desktop app that allows you to take notes,
+				quickly make changes to code, and save snippets.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://github.com/notangelmario/marker"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Learn More
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200 md:col-span-2">
+		<div class="card-body">
+			<h2 class="card-title">gread</h2>
+			<span class="badge badge-success">COMPLETED</span>
+			<p>
+				A gruvbox themed read mode for your browser. gread
+				removes distractions and makes reading more enjoyable.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://gread.notangelmario.dev"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Check out
+					<IconExternalLink/>
+				</a>
+				<a
+					class="btn btn-square btn-outline"
+					href="https://github.com/notangelmario/gread"
+					target="_blank"
+				>
+					<img
+						src="https://cdn.simpleicons.org/github/000000/ffffff"
+						class="w-6 h-6"
+						alt=""
+					/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200">
+		<div class="card-body">
+			<h2 class="card-title">fresh_gleam</h2>
+			<span class="badge badge-success">MAINTAINED</span>
+			<p>A plugin for Fresh to use the Gleam language.</p>
+			<div class="card-actions">
+				<a
+					href="https://github.com/notangelmario/fresh_gleam"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Learn More
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200">
+		<div class="card-body">
+			<h2 class="card-title">hardbound</h2>
+			<span class="badge badge-warning">ARCHIVED</span>
+			<p>
+				A simple SolidJS framework for building web apps with
+				Deno.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://github.com/notangelmario/hardbound"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Learn More
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200 md:col-span-2">
+		<div class="card-body">
+			<h2 class="card-title">markdownc</h2>
+			<span class="badge badge-success">COMPLETED</span>
+			<p>
+				A simple, fast, and easy to use markdown compiler built
+				with C.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://github.com/notangelmario/markdownc"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Learn More
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200 md:row-span-2">
+		<div class="card-body">
+			<h2 class="card-title">Solander</h2>
+			<span class="badge badge-warning">ARCHIVED</span>
+			<p>
+				A web app map to find interesting places and events in
+				your area.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://github.com/notangelmario/solander"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Learn More
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="card bg-base-200 md:col-span-2">
+		<div class="card-body">
+			<h2 class="card-title">mdserve</h2>
+			<span class="badge badge-warning">UNMAINTAINED</span>
+			<p>
+				A tool built with Deno that allows you to preview
+				markdown files in your browser.
+			</p>
+			<div class="card-actions">
+				<a
+					href="https://github.com/notangelmario/mdserve"
+					target="_blank"
+					class="btn btn-outline"
+				>
+					Learn More
+					<IconExternalLink/>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
