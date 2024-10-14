@@ -16,7 +16,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@tabler/icons-svelte": "^3.11.0",
     "@tailwindcss/typography": "^0.5.13",
-    "astro": "^4.15.4",
+    "astro": "^4.16.3",
     "daisyui": "^4.12.2",
     "sharp": "^0.33.5",
     "svelte": "^4.2.19",
