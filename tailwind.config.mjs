@@ -10,8 +10,8 @@ export default {
 		require("daisyui")
 	],
 	daisyui: {
-		themes: ["retro", "coffee"],
-		darkTheme: "coffee",
+		themes: ["lofi", "black"],
+		darkTheme: "black",
 		logs: false
 	}
 }
