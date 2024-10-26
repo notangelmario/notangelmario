@@ -22,8 +22,8 @@
 
 body {
 	background-image:
-		linear-gradient(to right, oklch(var(--p) / .3) 1px, transparent 1px),
-		linear-gradient(to bottom, oklch(var(--p) / .3) 1px, transparent 1px);
+		linear-gradient(to right, oklch(var(--p) / .1) 1px, transparent 1px),
+		linear-gradient(to bottom, oklch(var(--p) / .1) 1px, transparent 1px);
 	background-size: 40px 40px;
 }
 
@@ -46,8 +46,8 @@ body::after {
 @media (prefers-color-scheme: dark) {
 	body {
 		background-image:
-			linear-gradient(to right, oklch(var(--p) / .05) 1px, transparent 1px),
-			linear-gradient(to bottom, oklch(var(--p) / .05) 1px, transparent 1px);
+			linear-gradient(to right, oklch(var(--p) / .2) 1px, transparent 1px),
+			linear-gradient(to bottom, oklch(var(--p) / .2) 1px, transparent 1px);
 	}
 
 	body::after {
